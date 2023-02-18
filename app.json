@@ -14,11 +14,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nyit.awarecity",
+      "config": {
+        "googleMapsApiKey": "AIzaSyArvtsDk-I9NVu87fPJwRgZFuBMXTH7ASo"
+      }
     },
     "android": {
       "adaptiveIcon": {
