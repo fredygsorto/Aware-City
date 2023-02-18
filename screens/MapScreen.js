@@ -5,45 +5,28 @@ import { markers } from "../MapData";
 
 export default function MapScreen() {
   return (
-    <MapView
-      provider={PROVIDER_GOOGLE}
-      style={styles.map}
-      region={{
-        latitude: 40.7695555,
-        longitude: -73.9846066,
-        latitudeDelta: 0.015,
-        longitudeDelta: 0.0121,
-      }}
-    >
-      <View style={styles.header}>
-        <Text style={styles.title}>Aware City</Text>
-      </View>
-      <Marker
-        coordinate={{
-          latitude: 40.7653172,
-          longitude: -73.9891161,
+    <View style={{ flex: 1 }}>
+      <MapView
+        provider={PROVIDER_GOOGLE}
+        style={{ flex: 1 }}
+        initialRegion={{
+          latitude: 40.7695555,
+          longitude: -73.9846066,
+          latitudeDelta: 0.015,
+          longitudeDelta: 0.0121,
         }}
-        pinColor="black"
-        // image={require("./assets/shelter-icon.png")}
-        title="Covenant House Mother & Child"
-        description="Homeless Shelter"
       >
-        <Callout tooltip>
-          <View>
-            <View style={styles.bubble}>
-              <Text style={styles.name}>Homeless Shelter</Text>
-              <Text>A short description</Text>
-              <Image
-                style={styles.image}
-                source={require("../assets/shelter-icon.png")}
-              />
-            </View>
-            <View style={styles.arrowBorder} />
-            <View style={styles.arrow} />
-          </View>
-        </Callout>
-      </Marker>
-    </MapView>
+        {markers.map((marker) => (
+          <Marker
+            key={marker.title}
+            coordinate={marker.coordinate}
+            pinColor={marker.pinColor}
+            title={marker.title}
+            description={marker.description}
+          />
+        ))}
+      </MapView>
+    </View>
   );
 }
 
