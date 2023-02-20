@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar'
 import { Image, StyleSheet, Text, View } from "react-native";
 import MapView, { PROVIDER_GOOGLE, Marker, Callout } from "react-native-maps";
 
@@ -26,6 +27,7 @@ export default function MapScreen() {
           />
         ))}
       </MapView>
+      <StatusBar style="auto"/>
     </View>
   );
 }
