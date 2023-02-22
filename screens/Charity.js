@@ -18,6 +18,6 @@ container: {
     paddingVertical: 25,
     justifyContent: 'flex-start',
     flexDirection: 'column', 
-    backgroundColor: 'rgb(251,234,215)',
+    backgroundColor: '#fff',
     },
 });

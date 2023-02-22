@@ -14,6 +14,8 @@ export default function BottomTab() {
         initialRouteName="Home"
         screenOptions={({ route }) => ({
           headerShown: true,
+          headerStyle: { backgroundColor: "#FCE9D8" },
+          tabBarStyle: { backgroundColor: "#FCE9D8" },
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
