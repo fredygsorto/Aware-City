@@ -1,12 +1,23 @@
-import { StatusBar } from 'expo-status-bar'
-import { Image, StyleSheet, Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import React, { useState, useRef, useCallback } from "react";
+import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 import MapView, { PROVIDER_GOOGLE, Marker, Callout } from "react-native-maps";
+import Carousel from "react-native-snap-carousel";
 
 import { markers } from "../MapData";
 
 export default function MapScreen() {
+  renderItem = ({ item }) => {
+    return (
+      <View style={styles.carouselContainer}>
+        <Text style={styles.carouselTitle}>{item.title}</Text>
+        <Text style={styles.carouselDescription}>{item.description}</Text>
+      </View>
+    );
+  };
+
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.container}>
       <MapView
         provider={PROVIDER_GOOGLE}
         style={{ flex: 1 }}
@@ -27,15 +38,43 @@ export default function MapScreen() {
           />
         ))}
       </MapView>
-      <StatusBar style="auto"/>
+      <Carousel
+        containerCustomStyle={styles.carousel}
+        data={markers}
+        renderItem={renderItem}
+        sliderWidth={Dimensions.get("window").width}
+        itemWidth={300}
+      />
+
+      <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  carousel: {
+    position: "absolute",
+    bottom: 0,
+    marginBottom: 48,
+  },
+  carouselContainer: {
+    backgroundColor: "#FCE9D8",
+    borderColor: "brown",
+    borderWidth: 1,
+    borderRadius: 24,
+    padding: 24,
+    // height: 200,
+    // width: 300,
+  },
+  carouselTitle: {
+    fontWeight: "bold",
+  },
+  carouselDescription: {},
+  container: {
+    ...StyleSheet.absoluteFillObject,
+  },
   map: {
-    height: "100%",
-    width: "100%",
+    ...StyleSheet.absoluteFillObject,
   },
   // Callout bubble
   bubble: {
