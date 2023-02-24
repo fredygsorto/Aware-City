@@ -2,25 +2,18 @@ import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect, useRef } from "react";
 import {
   Dimensions,
-  Image,
   StyleSheet,
   Text,
   View,
   TouchableOpacity,
 } from "react-native";
-import MapView, {
-  PROVIDER_GOOGLE,
-  Marker,
-  Circle,
-  handleCenter,
-} from "react-native-maps";
+import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import Carousel from "react-native-snap-carousel";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import * as Location from "expo-location";
 import { markers } from "../MapData";
 
 export default function MapScreen() {
-
   // User location
   const [location, setLocation] = useState();
   const mapRef = useRef(null);
@@ -36,8 +29,8 @@ export default function MapScreen() {
 
       let currentLocation = await Location.getCurrentPositionAsync({});
       setLocation(currentLocation);
-      console.log("Location: ");
-      console.log(currentLocation);
+      // console.log("Location: ");
+      // console.log(currentLocation);
     };
     getPermissions();
   }, []);
@@ -46,16 +39,16 @@ export default function MapScreen() {
     return <Text>Loading...</Text>;
   }
 
-  // const handleCenter = () => {
-  //   if (mapRef.current) {
-  //     mapRef.current.animateToRegion({
-  //       latitude: location?.coords?.latitude,
-  //       longitude: location?.coords?.longitude,
-  //       latitudeDelta: 0.0922,
-  //       longitudeDelta: 0.0421,
-  //     });
-  //   }
-  // };
+  const handleCenter = () => {
+    if (mapRef.current) {
+      mapRef.current.animateToRegion({
+        latitude: location?.coords?.latitude,
+        longitude: location?.coords?.longitude,
+        latitudeDelta: 0.0422,
+        longitudeDelta: 0.0421,
+      });
+    }
+  };
 
   // Function to render items in the carousel card
   renderItem = ({ item }) => {
@@ -79,14 +72,9 @@ export default function MapScreen() {
           longitudeDelta: 0.0421,
         }}
         ref={mapRef}
+        showsUserLocation={true}
+        followsUserLocation={true}
       >
-        {/* <Marker
-          coordinate={{
-            latitude: location.coords.latitude,
-            longitude: location.coords.longitude,
-          }}
-          title="You are here"
-        /> */}
         {markers.map((marker) => (
           <Marker
             key={marker.title}
@@ -96,18 +84,6 @@ export default function MapScreen() {
             description={marker.description}
           />
         ))}
-        {location && (
-          <Circle
-            center={{
-              latitude: location.coords.latitude,
-              longitude: location.coords.longitude,
-            }}
-            radius={location.coords.accuracy}
-            fillColor="rgba(0, 0, 255, 255)"
-            strokeColor="rgba(0, 0, 255, 0.3)"
-            strokeWidth={1}
-          />
-        )}
       </MapView>
       <Carousel
         containerCustomStyle={styles.carousel}
@@ -117,15 +93,26 @@ export default function MapScreen() {
         itemWidth={300}
       />
       <TouchableOpacity style={styles.button} onPress={handleCenter}>
-        <Text style={styles.buttonText}>Center</Text>
+        <Ionicons name="navigate" size={24} color="blue" />
+        {/* <Text style={styles.buttonText}>Center</Text> */}
       </TouchableOpacity>
       <StatusBar style="auto" />
-      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  button: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    borderWidth: 2,
+    borderColor: "white",
+    backgroundColor: "rgba(0,0,0,0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+  },
   carousel: {
     position: "absolute",
     bottom: 0,
