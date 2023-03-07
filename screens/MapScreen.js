@@ -16,6 +16,10 @@ import { markers } from "../MapData";
 export default function MapScreen() {
   // User location
   const [location, setLocation] = useState();
+
+  // Carousel linking with Marker Index
+  const [selectedMarkerIndex, setSelectedMarkerIndex] = useState(null);
+
   const mapRef = useRef(null);
 
   // Getting user permission and location
@@ -51,13 +55,40 @@ export default function MapScreen() {
   };
 
   // Function to render items in the carousel card
-  renderItem = ({ item }) => {
+  const renderItem = ({ item, index }) => {
     return (
       <View style={styles.carouselContainer}>
-        <Text style={styles.carouselTitle}>{item.title}</Text>
-        <Text style={styles.carouselDescription}>{item.description}</Text>
+        <TouchableOpacity
+          style={styles.carouselItem}
+          onPress={() => {
+            setSelectedMarkerIndex(index);
+            animateToSelectedMarker(index);
+          }}
+        >
+          <Text style={styles.carouselTitle}>{item.title}</Text>
+          <Text style={styles.carouselDescription}>{item.description}</Text>
+        </TouchableOpacity>
+        {/* <TouchableOpacity>
+          <Text>Get Directions</Text>
+        </TouchableOpacity> */}
       </View>
     );
+  };
+
+  const onCarouselItemChange = (index) => {
+    setSelectedMarkerIndex(index);
+    animateToSelectedMarker(index);
+  };
+
+  const animateToSelectedMarker = (index) => {
+    const { coordinate } = markers[index];
+    const region = {
+      latitude: coordinate.latitude,
+      longitude: coordinate.longitude,
+      latitudeDelta: 0.03,
+      longitudeDelta: 0.03,
+    };
+    mapRef.current.animateToRegion(region);
   };
 
   return (
@@ -73,7 +104,7 @@ export default function MapScreen() {
         }}
         ref={mapRef}
         showsUserLocation={true}
-        followsUserLocation={true}
+        followsUserLocation={false}
       >
         {markers.map((marker) => (
           <Marker
@@ -91,6 +122,8 @@ export default function MapScreen() {
         renderItem={renderItem}
         sliderWidth={Dimensions.get("window").width}
         itemWidth={300}
+        firstItem={selectedMarkerIndex}
+        onSnapToItem={onCarouselItemChange}
       />
       <TouchableOpacity style={styles.button} onPress={handleCenter}>
         <Ionicons name="navigate" size={24} color="blue" />
@@ -108,7 +141,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     borderWidth: 2,
     borderColor: "white",
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "white",
     justifyContent: "center",
     alignItems: "center",
     position: "absolute",
