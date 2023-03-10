@@ -12,6 +12,7 @@ import Carousel from "react-native-snap-carousel";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import * as Location from "expo-location";
 import { markers } from "../MapData";
+import Loading from "./Loading";
 
 export default function MapScreen() {
   // User location
@@ -40,7 +41,7 @@ export default function MapScreen() {
   }, []);
 
   if (!location) {
-    return <Text>Loading...</Text>;
+    return <Loading />;
   }
 
   const handleCenter = () => {
