@@ -50,4 +50,44 @@ export const markers = [
     description: "Homeless Shelter",
     address: "211 E 81st St, New York, NY 10028",
   },
+  {
+    coordinate: {
+      latitude: 40.745201,
+      longitude: -73.981483,
+    },
+    pinColor: "blue",
+    title: "Mainchance Drop-In Center",
+    description: "Homeless Shelter",
+    address: "120 E 32nd St, New York, NY 10016",
+  },
+  {
+    coordinate: {
+      latitude: 40.75243,
+      longitude: -73.97214,
+    },
+    pinColor: "blue",
+    title: "Project Renewal New Providence Women's Shelter",
+    description: "Homeless Shelter",
+    address: "225 E 45th St, New York, NY 10017",
+  },
+  {
+    coordinate: {
+      latitude: 40.740582,
+      longitude: -73.974777,
+    },
+    pinColor: "blue",
+    title: "HRA Men's Shelter",
+    description: "Homeless Shelter",
+    address: "400 E 30th St, New York, NY 10016",
+  },
+  {
+    coordinate: {
+      latitude: 40.75747,
+      longitude: -73.96822,
+    },
+    pinColor: "blue",
+    title: "Samaritan Village",
+    description: "Homeless Shelter",
+    address: "225 E 53rd St, New York, NY 10022",
+  },
 ];
