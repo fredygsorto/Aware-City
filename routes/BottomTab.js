@@ -11,7 +11,7 @@ export default function BottomTab() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="MapScreen"
+        initialRouteName="Home"
         screenOptions={({ route }) => ({
           headerShown: true,
           headerStyle: { backgroundColor: "#FCE9D8" },
