@@ -8,5 +8,5 @@ import BottomTab from "./routes/BottomTab";
 import Playground from "./Playground";
 
 export default function App() {
-  return <BottomTab />;
+  return <BottomTab/>;
 }

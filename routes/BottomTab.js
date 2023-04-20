@@ -38,7 +38,7 @@ export default function BottomTab() {
         <Tab.Screen
           name="MapScreen"
           component={MapScreen}
-          options={{ tabBarBadge: 1 }}
+          // options={{ tabBarBadge: 1 }}
         />
         <Tab.Screen name="Charity" component={Charity} />
       </Tab.Navigator>

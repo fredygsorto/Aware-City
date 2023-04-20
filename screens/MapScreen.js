@@ -6,6 +6,7 @@ import {
   Text,
   View,
   TouchableOpacity,
+  SafeAreaView,
 } from "react-native";
 import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import Carousel from "react-native-snap-carousel";
@@ -40,9 +41,9 @@ export default function MapScreen() {
     getPermissions();
   }, []);
 
-  if (!location) {
-    return <Loading />;
-  }
+  // if (!location) {
+  //   return <Loading />;
+  // }
 
   const handleCenter = () => {
     if (mapRef.current) {
