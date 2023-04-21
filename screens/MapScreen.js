@@ -41,9 +41,9 @@ export default function MapScreen() {
     getPermissions();
   }, []);
 
-  // if (!location) {
-  //   return <Loading />;
-  // }
+  if (!location) {
+    return <Loading />;
+  }
 
   const handleCenter = () => {
     if (mapRef.current) {
