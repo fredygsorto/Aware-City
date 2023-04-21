@@ -21,7 +21,7 @@ export default function BottomTab() {
 
             if (route.name === "Home") {
               iconName = focused ? "home" : "home-outline";
-            } else if (route.name === "MapScreen") {
+            } else if (route.name === "Map") {
               iconName = focused ? "map" : "map-outline";
             } else if (route.name === "Charity") {
               iconName = focused ? "heart-half" : "heart-half-outline";
@@ -36,7 +36,7 @@ export default function BottomTab() {
       >
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen
-          name="MapScreen"
+          name="Map"
           component={MapScreen}
           // options={{ tabBarBadge: 1 }}
         />
