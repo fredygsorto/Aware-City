@@ -16,8 +16,9 @@ import { markers } from "../MapData";
 import Loading from "./Loading";
 
 export default function MapScreen() {
+  const limitCarouselCard = markers.slice(0, 4);
   // User location
-  const [location, setLocation] = useState();
+  const [location, setLocation] = useState(null);
 
   // Carousel linking with Marker Index
   const [selectedMarkerIndex, setSelectedMarkerIndex] = useState(null);
@@ -120,7 +121,7 @@ export default function MapScreen() {
       </MapView>
       <Carousel
         containerCustomStyle={styles.carousel}
-        data={markers}
+        data={limitCarouselCard}
         renderItem={renderItem}
         sliderWidth={Dimensions.get("window").width}
         itemWidth={300}
