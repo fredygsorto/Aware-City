@@ -7,6 +7,7 @@ import {
   View,
   TouchableOpacity,
   SafeAreaView,
+  Switch,
 } from "react-native";
 import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import Carousel from "react-native-snap-carousel";
@@ -24,6 +25,9 @@ export default function MapScreen() {
   const [selectedMarkerIndex, setSelectedMarkerIndex] = useState(null);
 
   const mapRef = useRef(null);
+
+  const [showHomelessShelters, setShowHomelessShelters] = useState(true);
+  const [showFoodPantries, setShowFoodPantries] = useState(true);
 
   // Getting user permission and location
   useEffect(() => {
@@ -94,8 +98,32 @@ export default function MapScreen() {
     mapRef.current.animateToRegion(region);
   };
 
+  const selectedMarkers = limitCarouselCard.filter((item, index) => index === selectedMarkerIndex);
+
   return (
     <View style={styles.container}>
+
+    {/* filters */}
+    <View style={styles.filterBox}>
+
+      <View style={styles.filter}>
+        <Switch
+          value={showHomelessShelters}
+          onValueChange={(value) => setShowHomelessShelters(value)}
+        />
+        <Text>Homeless Shelters</Text>
+      </View>
+
+      <View style={styles.filter}>
+        <Switch
+          value={showFoodPantries}
+          onValueChange={(value) => setShowFoodPantries(value)}
+        />
+        <Text>Food Pantries</Text>
+      </View>
+
+    </View>
+        
       <MapView
         provider={PROVIDER_GOOGLE}
         style={{ flex: 1 }}
@@ -109,7 +137,25 @@ export default function MapScreen() {
         showsUserLocation={true}
         followsUserLocation={false}
       >
-        {markers.map((marker) => (
+      
+      {/* previous marker */}
+        {/* {markers.map((marker) => (
+          <Marker
+            key={marker.title}
+            coordinate={marker.coordinate}
+            pinColor={marker.pinColor}
+            title={marker.title}
+            description={marker.description}
+          />
+        ))} */}
+
+        {markers
+        .filter(
+          (marker) =>
+            (showHomelessShelters && marker.type === "homeless_shelter") ||
+            (showFoodPantries && marker.type === "food_pantry")
+        )
+        .map((marker) => (
           <Marker
             key={marker.title}
             coordinate={marker.coordinate}
@@ -118,16 +164,23 @@ export default function MapScreen() {
             description={marker.description}
           />
         ))}
+
       </MapView>
+
       <Carousel
         containerCustomStyle={styles.carousel}
-        data={limitCarouselCard}
+        data={markers.filter(
+          (marker) =>
+            (showHomelessShelters && marker.type === "homeless_shelter") ||
+            (showFoodPantries && marker.type === "food_pantry")
+        )}
         renderItem={renderItem}
         sliderWidth={Dimensions.get("window").width}
         itemWidth={300}
         firstItem={selectedMarkerIndex}
         onSnapToItem={onCarouselItemChange}
       />
+      
       <TouchableOpacity style={styles.button} onPress={handleCenter}>
         <Ionicons name="navigate" size={24} color="blue" />
         {/* <Text style={styles.buttonText}>Center</Text> */}
@@ -237,4 +290,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     paddingBottom: 5,
   },
+  filterBox:{
+    backgroundColor: "#FCE9D8",
+  },
+  filter:{
+    alignItems: "center",
+    // justifyContent: "center",
+  },
+  
 });

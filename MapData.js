@@ -8,6 +8,7 @@ export const markers = [
     title: "Covenant House Mother & Child",
     description: "Homeless Shelter",
     address: "460 W 41st St, New York, NY 10036",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -18,6 +19,7 @@ export const markers = [
     title: "Lenox Hill Neighborhood House Women’s Mental Health Shelter ",
     description: "Homeless Shelter",
     address: "643 Park Ave, New York, NY 10065",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -27,6 +29,7 @@ export const markers = [
     pinColor: "green",
     title: "Saint Paul's RC Church - Food Distribution Center",
     description: "Food Pantry",
+    type:"food_pantry",
   },
   {
     coordinate: {
@@ -37,6 +40,7 @@ export const markers = [
     title: "American Homestay",
     description: "Homeless Shelter",
     address: "360 W 42nd St, New York, NY 10036",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -47,6 +51,7 @@ export const markers = [
     title: "NCS Residence",
     description: "Homeless Shelter",
     address: "211 E 81st St, New York, NY 10028",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -57,6 +62,7 @@ export const markers = [
     title: "Mainchance Drop-In Center",
     description: "Homeless Shelter",
     address: "120 E 32nd St, New York, NY 10016",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -67,6 +73,7 @@ export const markers = [
     title: "Project Renewal New Providence Women's Shelter",
     description: "Homeless Shelter",
     address: "225 E 45th St, New York, NY 10017",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -77,6 +84,7 @@ export const markers = [
     title: "HRA Men's Shelter",
     description: "Homeless Shelter",
     address: "400 E 30th St, New York, NY 10016",
+    type:"homeless_shelter",
   },
   {
     coordinate: {
@@ -87,5 +95,6 @@ export const markers = [
     title: "Samaritan Village",
     description: "Homeless Shelter",
     address: "225 E 53rd St, New York, NY 10022",
+    type:"homeless_shelter",
   },
 ];
