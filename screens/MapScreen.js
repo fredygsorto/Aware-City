@@ -98,32 +98,12 @@ export default function MapScreen() {
     mapRef.current.animateToRegion(region);
   };
 
-  const selectedMarkers = limitCarouselCard.filter((item, index) => index === selectedMarkerIndex);
+  const selectedMarkers = limitCarouselCard.filter(
+    (item, index) => index === selectedMarkerIndex
+  );
 
   return (
     <View style={styles.container}>
-
-    {/* filters */}
-    <View style={styles.filterBox}>
-
-      <View style={styles.filter}>
-        <Switch
-          value={showHomelessShelters}
-          onValueChange={(value) => setShowHomelessShelters(value)}
-        />
-        <Text>Homeless Shelters</Text>
-      </View>
-
-      <View style={styles.filter}>
-        <Switch
-          value={showFoodPantries}
-          onValueChange={(value) => setShowFoodPantries(value)}
-        />
-        <Text>Food Pantries</Text>
-      </View>
-
-    </View>
-        
       <MapView
         provider={PROVIDER_GOOGLE}
         style={{ flex: 1 }}
@@ -137,8 +117,7 @@ export default function MapScreen() {
         showsUserLocation={true}
         followsUserLocation={false}
       >
-      
-      {/* previous marker */}
+        {/* previous marker */}
         {/* {markers.map((marker) => (
           <Marker
             key={marker.title}
@@ -150,22 +129,39 @@ export default function MapScreen() {
         ))} */}
 
         {markers
-        .filter(
-          (marker) =>
-            (showHomelessShelters && marker.type === "homeless_shelter") ||
-            (showFoodPantries && marker.type === "food_pantry")
-        )
-        .map((marker) => (
-          <Marker
-            key={marker.title}
-            coordinate={marker.coordinate}
-            pinColor={marker.pinColor}
-            title={marker.title}
-            description={marker.description}
-          />
-        ))}
-
+          .filter(
+            (marker) =>
+              (showHomelessShelters && marker.type === "homeless_shelter") ||
+              (showFoodPantries && marker.type === "food_pantry")
+          )
+          .map((marker) => (
+            <Marker
+              key={marker.title}
+              coordinate={marker.coordinate}
+              pinColor={marker.pinColor}
+              title={marker.title}
+              description={marker.description}
+            />
+          ))}
       </MapView>
+      {/* filters */}
+      <View style={styles.filterBox}>
+        <View style={styles.filter}>
+          <Switch
+            value={showHomelessShelters}
+            onValueChange={(value) => setShowHomelessShelters(value)}
+          />
+          <Text>Homeless Shelters</Text>
+        </View>
+
+        <View style={styles.filter}>
+          <Switch
+            value={showFoodPantries}
+            onValueChange={(value) => setShowFoodPantries(value)}
+          />
+          <Text>Food Pantries</Text>
+        </View>
+      </View>
 
       <Carousel
         containerCustomStyle={styles.carousel}
@@ -180,11 +176,9 @@ export default function MapScreen() {
         firstItem={selectedMarkerIndex}
         onSnapToItem={onCarouselItemChange}
       />
-      
-      <TouchableOpacity style={styles.button} onPress={handleCenter}>
+      {/* <TouchableOpacity style={styles.button} onPress={handleCenter}>
         <Ionicons name="navigate" size={24} color="blue" />
-        {/* <Text style={styles.buttonText}>Center</Text> */}
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <StatusBar style="auto" />
     </View>
   );
@@ -290,12 +284,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     paddingBottom: 5,
   },
-  filterBox:{
+  filterBox: {
+    position: "absolute",
+    top: 10,
+    left: 10,
     backgroundColor: "#FCE9D8",
+    padding: 10,
+    borderRadius: 5,
+    zIndex: 1,
   },
-  filter:{
+  filter: {
+    flexDirection: "row",
     alignItems: "center",
-    // justifyContent: "center",
+    marginBottom: 5,
   },
-  
 });
