@@ -215,7 +215,7 @@ export default function MapScreen() {
 
       <Carousel
         containerCustomStyle={styles.carousel}
-        data={sortedMarkers.filter(
+        data={limitCarouselCard.filter(
           (marker) =>
             (showHomelessShelters && marker.type === "homeless_shelter") ||
             (showFoodPantries && marker.type === "food_pantry")
