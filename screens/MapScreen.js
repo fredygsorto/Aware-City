@@ -28,6 +28,7 @@ export default function MapScreen() {
 
   const [showHomelessShelters, setShowHomelessShelters] = useState(true);
   const [showFoodPantries, setShowFoodPantries] = useState(true);
+  const [showSoupKitchens, setShowSoupKitchens] = useState(true);
 
   // Getting user permission and location
   useEffect(() => {
@@ -132,7 +133,8 @@ export default function MapScreen() {
           .filter(
             (marker) =>
               (showHomelessShelters && marker.type === "homeless_shelter") ||
-              (showFoodPantries && marker.type === "food_pantry")
+              (showFoodPantries && marker.type === "food_pantry") ||
+              (showSoupKitchens && marker.type === "soup_kitchen" )
           )
           .map((marker) => (
             <Marker
@@ -146,6 +148,7 @@ export default function MapScreen() {
       </MapView>
       {/* filters */}
       <View style={styles.filterBox}>
+
         <View style={styles.filter}>
           <Switch
             value={showHomelessShelters}
@@ -161,6 +164,15 @@ export default function MapScreen() {
           />
           <Text>Food Pantries</Text>
         </View>
+
+        <View style={styles.filter}>
+          <Switch
+            value={showSoupKitchens}
+            onValueChange={(value) => setShowSoupKitchens(value)}
+          />
+          <Text>Soup Kitchens</Text>
+        </View>
+
       </View>
 
       <Carousel
@@ -168,7 +180,8 @@ export default function MapScreen() {
         data={markers.filter(
           (marker) =>
             (showHomelessShelters && marker.type === "homeless_shelter") ||
-            (showFoodPantries && marker.type === "food_pantry")
+            (showFoodPantries && marker.type === "food_pantry") ||
+            (showSoupKitchens && marker.type === "soup_kitchen" )
         )}
         renderItem={renderItem}
         sliderWidth={Dimensions.get("window").width}
