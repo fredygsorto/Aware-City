@@ -13,11 +13,12 @@ import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import Carousel from "react-native-snap-carousel";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import * as Location from "expo-location";
+import sortByDistance from "sort-by-distance";
+
 import { markers } from "../MapData";
 import Loading from "./Loading";
 
 export default function MapScreen() {
-  const limitCarouselCard = markers.slice(0, 4);
   // User location
   const [location, setLocation] = useState(null);
 
@@ -50,6 +51,55 @@ export default function MapScreen() {
   if (!location) {
     return <Loading />;
   }
+
+  // Calculate distance between two coordinates using haversine formula
+  function getDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Earth's radius in km
+    const dLat = ((lat2 - lat1) * Math.PI) / 180;
+    const dLon = ((lon2 - lon1) * Math.PI) / 180;
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos((lat1 * Math.PI) / 180) *
+        Math.cos((lat2 * Math.PI) / 180) *
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const d = R * c;
+    return d / 1.609; // Distance in miles
+  }
+
+  // Sort the markers array based on distance from the user's location
+  const sortedMarkers = markers.sort((a, b) => {
+    const distanceA = getDistance(
+      location.coords.latitude,
+      location.coords.longitude,
+      a.coordinate.latitude,
+      a.coordinate.longitude
+    );
+    const distanceB = getDistance(
+      location.coords.latitude,
+      location.coords.longitude,
+      b.coordinate.latitude,
+      b.coordinate.longitude
+    );
+    return distanceA - distanceB;
+  });
+
+  // const sortedMarkers = sortByDistance(markers, {
+  //   lat: location.coords.latitude,
+  //   lon: location.coords.longitude,
+  // });
+
+  // console.log("Latitude: " + location.coords.latitude);
+  // console.log("Longitude: " + location.coords.longitude);
+
+  // markers.forEach((marker) => {
+  //   console.log(
+  //     `${marker.title}: ${marker.coordinate.latitude}, ${marker.coordinate.longitude}`
+  //   );
+  // });
+
+  const limitCarouselCard = sortedMarkers.slice(0, 4);
 
   const handleCenter = () => {
     if (mapRef.current) {
@@ -177,7 +227,7 @@ export default function MapScreen() {
 
       <Carousel
         containerCustomStyle={styles.carousel}
-        data={markers.filter(
+        data={limitCarouselCard.filter(
           (marker) =>
             (showHomelessShelters && marker.type === "homeless_shelter") ||
             (showFoodPantries && marker.type === "food_pantry") ||
