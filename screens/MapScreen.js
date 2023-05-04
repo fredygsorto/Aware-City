@@ -27,6 +27,14 @@ export default function MapScreen() {
 
   const mapRef = useRef(null);
 
+  // useState for filterBox 
+  const [showFilterBox, setShowFilterBox] = useState(null);
+
+  const toggleFilterBox = () => {
+    setShowFilterBox(!showFilterBox);
+  }
+
+  // Each marker filter appearing
   const [showHomelessShelters, setShowHomelessShelters] = useState(true);
   const [showFoodPantries, setShowFoodPantries] = useState(true);
   const [showSoupKitchens, setShowSoupKitchens] = useState(true);
@@ -198,32 +206,38 @@ export default function MapScreen() {
       </MapView>
       {/* filters */}
       <View style={styles.filterBox}>
+      <TouchableOpacity onPress={toggleFilterBox}>
+        <Text>Filters</Text>
+      </TouchableOpacity>
 
-        <View style={styles.filter}>
-          <Switch
-            value={showHomelessShelters}
-            onValueChange={(value) => setShowHomelessShelters(value)}
-          />
-          <Text>Homeless Shelters</Text>
+      {showFilterBox && (
+        <View>
+          <View style={styles.filter}>
+            <Switch
+              value={showHomelessShelters}
+              onValueChange={(value) => setShowHomelessShelters(value)}
+            />
+            <Text>Homeless Shelters</Text>
+          </View>
+
+          <View style={styles.filter}>
+            <Switch
+              value={showFoodPantries}
+              onValueChange={(value) => setShowFoodPantries(value)}
+            />
+            <Text>Food Pantries</Text>
+          </View>
+
+          <View style={styles.filter}>
+            <Switch
+              value={showSoupKitchens}
+              onValueChange={(value) => setShowSoupKitchens(value)}
+            />
+            <Text>Soup Kitchens</Text>
+          </View>
         </View>
-
-        <View style={styles.filter}>
-          <Switch
-            value={showFoodPantries}
-            onValueChange={(value) => setShowFoodPantries(value)}
-          />
-          <Text>Food Pantries</Text>
-        </View>
-
-        <View style={styles.filter}>
-          <Switch
-            value={showSoupKitchens}
-            onValueChange={(value) => setShowSoupKitchens(value)}
-          />
-          <Text>Soup Kitchens</Text>
-        </View>
-
-      </View>
+      )}
+    </View>
 
       <Carousel
         containerCustomStyle={styles.carousel}

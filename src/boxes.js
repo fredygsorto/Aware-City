@@ -153,9 +153,9 @@ export default function Boxes(){
                 >
                     <View style={styles.modal}>
                     <Text style={styles.modalTitle}>About Us</Text>
-                    <Text style={[styles.modalText, { textAlign: 'center' }]}>We are a team of three students from the New York Institute of Technology, who are passionate about using technology to solve real-world problems. Our team consists of [insert names of team members], who are pursuing [insert degree programs] at the university.</Text>
-                    <Text style={[styles.modalText, { textAlign: 'center' }]}>As part of our senior project, we are working on [insert brief description of your project]. Our goal is to [insert your project goal or mission statement]. We believe that our project has the potential to [insert potential impact of your project].</Text>
-                    <Text style={[styles.modalText, { textAlign: 'center' }]}>Our team has a diverse set of skills and experiences that we bring to the project. [Insert a brief summary of each team member's skills and experiences]. Together, we are committed to working collaboratively and using our skills to create a successful project.</Text>
+                    <Text style={[styles.modalText, { textAlign: 'center' }]}>We are a team of three students from the New York Institute of Technology, who are passionate about using technology to solve real-world problems. Our team consists of Shajid Muntaser, Fredy Sorto, and Brenda Encarnacion, who are pursuing Computer Science at the university.</Text>
+                    <Text style={[styles.modalText, { textAlign: 'center' }]}>As part of our senior project, we are working on building an aggregated platform to aid the unhoused population of New York City. Our goal is to provide value and make the most important resources available to the people of the city. We believe that our project has the potential to get into the hands of the unhoused in the form of available platforms in the city like LINK NYC.</Text>
+                    <Text style={[styles.modalText, { textAlign: 'center' }]}>Our team has a diverse set of skills and experiences that we bring to the project. Together, we are committed to working collaboratively and using our skills to create a successful project.</Text>
                     <TouchableOpacity onPress={() => setModalVisible3(false)}>
                         <Text style={styles.modalClose}>Close</Text>
                     </TouchableOpacity>
