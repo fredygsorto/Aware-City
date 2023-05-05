@@ -218,6 +218,8 @@ export default function MapScreen() {
             <Switch
               value={showHomelessShelters}
               onValueChange={(value) => setShowHomelessShelters(value)}
+              thumbColor="blue"
+              trackColor={{ false: 'gray', true: 'blue' }}
             />
             <Text>Homeless Shelters</Text>
           </View>
@@ -226,6 +228,8 @@ export default function MapScreen() {
             <Switch
               value={showFoodPantries}
               onValueChange={(value) => setShowFoodPantries(value)}
+              thumbColor="#00FF00"
+              trackColor={{ false: 'gray', true: '#00FF00' }}
             />
             <Text>Food Pantries</Text>
           </View>
@@ -234,6 +238,8 @@ export default function MapScreen() {
             <Switch
               value={showSoupKitchens}
               onValueChange={(value) => setShowSoupKitchens(value)}
+              thumbColor="yellow"
+              trackColor={{ false: 'gray', true: 'yellow' }}
             />
             <Text>Soup Kitchens</Text>
           </View>
@@ -242,6 +248,8 @@ export default function MapScreen() {
             <Switch
               value={showSocialServices}
               onValueChange={(value) => setShowSocialServices(value)}
+              thumbColor="magenta"
+              trackColor={{ false: 'gray', true: 'magenta' }}
             />
             <Text>Social Services</Text>
           </View>
