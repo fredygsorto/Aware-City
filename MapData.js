@@ -637,6 +637,128 @@ export const markers = [
     address: "88 Hanson Place, Brooklyn, NY 11217",
     type: "soup_kitchen",
   },
+
+  //Brooklyn Social Services 
+  {
+  coordinate: {
+    latitude: 40.697177,
+    longitude: -73.971062,
+    },
+    pinColor: "magenta",
+    title: "NYC Health + Hospitals/Gotham Health",
+    description: "Immigration Advocacy and Legal Services - Cumberland – NYLAG (LegalHealth)",
+    address: "100 N Portland Ave., 2nd Fl., Room 218, Brooklyn, NY 11205",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.655474,
+    longitude: -73.944507,
+    },
+    pinColor: "magenta",
+    title: "NYC Health + Hospitals/Kings County",
+    description: "SNAP Enroller",
+    address: "451 Clarkson Ave., R Bldg., Financial Services, Brooklyn, NY 11203",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.700632,
+    longitude: -73.941154,
+    },
+    pinColor: "magenta",
+    title: "NYC Health + Hospitals/Woodhull",
+    description: "General Legal Assistance - NYLAG (LegalHealth)",
+    address: "760 Broadway, Geriatric Wellness Center, Brooklyn, NY 11206",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.577981,
+    longitude: -73.965506,
+    },
+    pinColor: "magenta",
+    title: "NYC Health + Hospitals/Coney Island",
+    description: "General Legal Assistance - NYLAG (LegalHealth)",
+    address: "2601 Ocean Pkwy, Room 101, Brooklyn, NY 11235",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.678265,
+    longitude: -73.918853,
+    },
+    pinColor: "magenta",
+    title: "The Campaign Against Hunger",
+    description: "Food and Nutrition: SNAP Enrollment",
+    address: "2010 Fulton St., Brooklyn, NY 11233",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.680259,
+    longitude: -73.944974,
+    },
+    pinColor: "magenta",
+    title: "Financial Assistance - Bedford Stuyvesant Restoration Corporation",
+    description: "Single Stop",
+    address: "1368 Fulton St., Brooklyn, NY 11216",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.659348,
+    longitude: -73.884699,
+    },
+    pinColor: "magenta",
+    title: "Good Shepherd Services",
+    description: "Financial Assistance - Single Stop – East New York",
+    address: "876 Schenk Ave., Brooklyn, NY 11207",
+    type: "social_services",
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.598757,
+    longitude: -73.947412,
+    },
+    pinColor: "magenta",
+    title: "Public Health Solutions Neighborhood WIC Center",
+    description: "Financial Assistance - Sheepshead Bay – Single Stop",
+    address: "2555 Ocean Ave., 2nd Fl., Brooklyn, NY 11229",
+    type: "social_services",
+    },
+
+    {
+      coordinate: {
+      latitude: 40.652070,
+      longitude: -74.006619
+      },
+      pinColor: "magenta",
+      title: "SCO Family of Services – Center for Family Life",
+      description: "Financial Assistance - Community Service Program – Single Stop",
+      address: "443 39th St., Brooklyn, NY 11232",
+      type: "social_services"
+      },
+      
+      {
+      coordinate: {
+      latitude: 40.699161,
+      longitude: -73.917880
+      },
+      pinColor: "magenta",
+      title: "NYC Health + Hospitals/Gotham Health – Bushwick",
+      description: "Women, Infants, and Children (WIC) Enrollment",
+      address: "335 Central Ave., 1st Fl., Brooklyn, NY 11221",
+      type: "social_services"
+      },      
+
   {
     coordinate: {
       latitude: 40.8205,
@@ -650,6 +772,7 @@ export const markers = [
     phone: "(718) 993-5161",
     type: "homeless_shelter",
   },
+
   {
     coordinate: {
       latitude: 40.84066,
@@ -663,6 +786,7 @@ export const markers = [
     phone: "(718) 583-1511",
     type: "homeless_shelter",
   },
+
   {
     coordinate: {
       latitude: 40.868481,
@@ -1255,4 +1379,5 @@ const bronx = [
     phone: "(718) 409-0538",
     type: "food_pantry",
   },
+
 ];

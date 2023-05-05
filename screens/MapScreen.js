@@ -38,6 +38,7 @@ export default function MapScreen() {
   const [showHomelessShelters, setShowHomelessShelters] = useState(true);
   const [showFoodPantries, setShowFoodPantries] = useState(true);
   const [showSoupKitchens, setShowSoupKitchens] = useState(true);
+  const [showSocialServices, setShowSocialServices] = useState(true); 
 
   // Getting user permission and location
   useEffect(() => {
@@ -107,7 +108,7 @@ export default function MapScreen() {
   //   );
   // });
 
-  const limitCarouselCard = sortedMarkers.slice(0, 4);
+  const limitCarouselCard = sortedMarkers.slice(0, 10);
 
   const handleCenter = () => {
     if (mapRef.current) {
@@ -192,7 +193,8 @@ export default function MapScreen() {
             (marker) =>
               (showHomelessShelters && marker.type === "homeless_shelter") ||
               (showFoodPantries && marker.type === "food_pantry") ||
-              (showSoupKitchens && marker.type === "soup_kitchen" )
+              (showSoupKitchens && marker.type === "soup_kitchen" ) ||
+              (showSocialServices && marker.type === "social_services")
           )
           .map((marker) => (
             <Marker
@@ -235,6 +237,15 @@ export default function MapScreen() {
             />
             <Text>Soup Kitchens</Text>
           </View>
+
+          <View style={styles.filter}>
+            <Switch
+              value={showSocialServices}
+              onValueChange={(value) => setShowSocialServices(value)}
+            />
+            <Text>Social Services</Text>
+          </View>
+
         </View>
       )}
     </View>
@@ -245,7 +256,8 @@ export default function MapScreen() {
           (marker) =>
             (showHomelessShelters && marker.type === "homeless_shelter") ||
             (showFoodPantries && marker.type === "food_pantry") ||
-            (showSoupKitchens && marker.type === "soup_kitchen" )
+            (showSoupKitchens && marker.type === "soup_kitchen" )  ||
+            (showSocialServices && marker.type === "social_services")
         )}
         renderItem={renderItem}
         sliderWidth={Dimensions.get("window").width}
