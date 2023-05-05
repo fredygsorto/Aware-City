@@ -20,7 +20,7 @@ import Loading from "./Loading";
 
 export default function MapScreen() {
   // User location
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState();
 
   // Carousel linking with Marker Index
   const [selectedMarkerIndex, setSelectedMarkerIndex] = useState(null);
