@@ -757,7 +757,92 @@ export const markers = [
       description: "Women, Infants, and Children (WIC) Enrollment",
       address: "335 Central Ave., 1st Fl., Brooklyn, NY 11221",
       type: "social_services"
-      },      
+      },
+      
+  //Brooklyn Donation Centers
+  {
+    coordinate: {
+    latitude: 40.693416,
+    longitude: -73.988858
+    },
+    pinColor: "orange",
+    title: "NeON- Clothing closet",
+    description: "Offers free lightly worn shoes, clothing, and accessories for women, men and children.",
+    address: "345 Adams Street, Brooklyn, NY",
+    type: "donation_centers"
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.688150,
+    longitude: -73.986501
+    },
+    pinColor: "orange",
+    title: "Goodwill NYNJ Store & Donation Center",
+    description: "Affordable Clothing -> Mon-Sat: 11am-7pm",
+    address: "258 Livingston St, Brooklyn, NY 11201",
+    type: "donation_centers"
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.690779,
+    longitude: -73.959921
+    },
+    pinColor: "orange",
+    title: "St. Mary’s Church Clothing Drive",
+    description: "Affordable Clothing",
+    address: "230 Classon Ave, Brooklyn, NY 11205",
+    type: "donation_centers"
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.685989,
+    longitude: -73.978798
+    },
+    pinColor: "orange",
+    title: "The Salvation Army Family Store & Donation Center",
+    description: "Affordable Clothing -> Mon-Sat: 10am-7pm",
+    address: "436 Atlantic Ave, Brooklyn, NY 11217",
+    type: "donation_centers"
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.670443,
+    longitude: -73.910187
+    },
+    pinColor: "orange",
+    title: "Help USA - Brooklyn",
+    description: "Supplies, Shelter, temporary housing and more",
+    address: "515 Blake Ave, Brooklyn, NY 11207",
+    type: "donation_centers"
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.689184,
+    longitude: -73.962621
+    },
+    pinColor: "orange",
+    title: "The Salvation Army",
+    description: "Bills, food, education, pregnancy support, immigration services and more",
+    address: "22 Quincy St. Brooklyn, NY",
+    type: "donation_centers"
+    },
+    
+    {
+    coordinate: {
+    latitude: 40.692626,
+    longitude: -73.986654
+    },
+    pinColor: "orange",
+    title: "Housing Works, Inc.",
+    description: "Donations of clothing, shoes, jewelry, accessories",
+    address: "57 Willoughby St, Brooklyn, NY 11201",
+    type: "donation_centers"
+    },
 
   {
     coordinate: {

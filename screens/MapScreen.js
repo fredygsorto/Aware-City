@@ -38,7 +38,8 @@ export default function MapScreen() {
   const [showHomelessShelters, setShowHomelessShelters] = useState(true);
   const [showFoodPantries, setShowFoodPantries] = useState(true);
   const [showSoupKitchens, setShowSoupKitchens] = useState(true);
-  const [showSocialServices, setShowSocialServices] = useState(true); 
+  const [showSocialServices, setShowSocialServices] = useState(true);
+  const [showDonationCenters, setShowDonationCenters] = useState(true); 
 
   // Getting user permission and location
   useEffect(() => {
@@ -194,7 +195,8 @@ export default function MapScreen() {
               (showHomelessShelters && marker.type === "homeless_shelter") ||
               (showFoodPantries && marker.type === "food_pantry") ||
               (showSoupKitchens && marker.type === "soup_kitchen" ) ||
-              (showSocialServices && marker.type === "social_services")
+              (showSocialServices && marker.type === "social_services") ||
+              (showDonationCenters && marker.type === "donation_centers") 
           )
           .map((marker) => (
             <Marker
@@ -209,7 +211,7 @@ export default function MapScreen() {
       {/* filters */}
       <View style={styles.filterBox}>
       <TouchableOpacity onPress={toggleFilterBox}>
-        <Text>Filters</Text>
+        <Text>Filters <Ionicons name="filter-sharp"></Ionicons> </Text>
       </TouchableOpacity>
 
       {showFilterBox && (
@@ -254,6 +256,16 @@ export default function MapScreen() {
             <Text>Social Services</Text>
           </View>
 
+          <View style={styles.filter}>
+            <Switch
+              value={showDonationCenters}
+              onValueChange={(value) => setShowDonationCenters(value)}
+              thumbColor="orange"
+              trackColor={{ false: 'gray', true: 'orange'}}
+            />
+            <Text>Donation Centers</Text>
+          </View>
+
         </View>
       )}
     </View>
@@ -265,7 +277,8 @@ export default function MapScreen() {
             (showHomelessShelters && marker.type === "homeless_shelter") ||
             (showFoodPantries && marker.type === "food_pantry") ||
             (showSoupKitchens && marker.type === "soup_kitchen" )  ||
-            (showSocialServices && marker.type === "social_services")
+            (showSocialServices && marker.type === "social_services")  ||
+            (showDonationCenters && marker.type === "donation_centers") 
         )}
         renderItem={renderItem}
         sliderWidth={Dimensions.get("window").width}
@@ -310,6 +323,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 2,
     elevation: 2,
+    borderWidth: 2,
     // height: 200,
     // width: 300,
   },
@@ -383,6 +397,7 @@ const styles = StyleSheet.create({
   },
   filterBox: {
     position: "absolute",
+    borderWidth: 2,
     top: 10,
     left: 10,
     backgroundColor: "#FCE9D8",
