@@ -8,10 +8,12 @@ import {
   TouchableOpacity,
   SafeAreaView,
   Switch,
+  Linking,
 } from "react-native";
 import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import Carousel from "react-native-snap-carousel";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 import * as Location from "expo-location";
 import sortByDistance from "sort-by-distance";
 
@@ -109,7 +111,7 @@ export default function MapScreen() {
   //   );
   // });
 
-  const limitCarouselCard = sortedMarkers.slice(0, 10);
+  const limitCarouselCard = sortedMarkers.slice(0, 9);
 
   const handleCenter = () => {
     if (mapRef.current) {
@@ -134,11 +136,49 @@ export default function MapScreen() {
           }}
         >
           <Text style={styles.carouselTitle}>{item.title}</Text>
-          <Text style={styles.carouselDescription}>{item.description}</Text>
+          <Text style={styles.carouselSubTitle}>{item.description}</Text>
+          <View style={styles.carouselDetails}>
+            <View style={styles.carouselDetail}>
+              <FontAwesome
+                name="map-marker"
+                style={styles.carouselDetailIcon}
+              />
+              <Text
+                style={{
+                  fontSize: 16,
+                  lineHeight: 24,
+                  color: "#007AFF",
+                  textDecorationLine: "underline",
+                }}
+                onPress={() =>
+                  Linking.openURL(
+                    `https://www.google.com/maps/search/?api=1&query=${item.address}`
+                  )
+                }
+              >
+                {item.address}
+              </Text>
+            </View>
+            <View style={styles.carouselDetail}>
+              <FontAwesome name="clock-o" style={styles.carouselDetailIcon} />
+              <Text style={styles.carouselDetailText}>{item.hours}</Text>
+            </View>
+            <View style={styles.carouselDetail}>
+              <FontAwesome name="phone" style={styles.carouselDetailIcon} />
+              <Text
+                style={{
+                  fontSize: 16,
+                  lineHeight: 24,
+                  color: "#007AFF",
+                  textDecorationLine: "underline",
+                }}
+                onPress={() => Linking.openURL(`tel:${item.phone}`)}
+              >
+                {item.phone}
+              </Text>
+            </View>
+          </View>
         </TouchableOpacity>
-        {/* <TouchableOpacity>
-          <Text>Get Directions</Text>
-        </TouchableOpacity> */}
       </View>
     );
   };
@@ -328,6 +368,9 @@ const styles = StyleSheet.create({
     // height: 200,
     // width: 300,
   },
+  carouselItem: {
+    flex: 1,
+  },
   carouselTitle: {
     fontSize: 24,
     fontWeight: "bold",
@@ -336,10 +379,28 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     height: 60, // set a fixed height for the title
   },
-  carouselDescription: {
+  carouselSubTitle: {
     fontSize: 16,
     lineHeight: 24,
     color: "#666666",
+    marginBottom: 16,
+  },
+  carouselDetails: {
+    flexDirection: "column",
+  },
+  carouselDetail: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 8,
+  },
+  carouselDetailIcon: {
+    fontSize: 16,
+    marginRight: 8,
+    color: "#333333",
+  },
+  carouselDetailText: {
+    fontSize: 16,
+    color: "#333333",
   },
   container: {
     ...StyleSheet.absoluteFillObject,
