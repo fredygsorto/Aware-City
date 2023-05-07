@@ -22,7 +22,7 @@ import Loading from "./Loading";
 
 export default function MapScreen() {
   // User location
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState();
 
   // Carousel linking with Marker Index
   const [selectedMarkerIndex, setSelectedMarkerIndex] = useState(null);
@@ -42,6 +42,7 @@ export default function MapScreen() {
   const [showSoupKitchens, setShowSoupKitchens] = useState(true);
   const [showSocialServices, setShowSocialServices] = useState(true);
   const [showDonationCenters, setShowDonationCenters] = useState(true);
+  const [showEmergencyServices, setShowEmergencyServices] = useState(true);
 
   // Getting user permission and location
   useEffect(() => {
@@ -236,7 +237,8 @@ export default function MapScreen() {
               (showFoodPantries && marker.type === "food_pantry") ||
               (showSoupKitchens && marker.type === "soup_kitchen") ||
               (showSocialServices && marker.type === "social_services") ||
-              (showDonationCenters && marker.type === "donation_centers")
+              (showDonationCenters && marker.type === "donation_centers") ||
+              (showEmergencyServices && marker.type === "emergency_services")
           )
           .map((marker) => (
             <Marker
@@ -306,6 +308,16 @@ export default function MapScreen() {
                 trackColor={{ false: "gray", true: "orange" }}
               />
               <Text>Donation Centers</Text>
+            </View>
+
+            <View style={styles.filter}>
+              <Switch
+                value={showEmergencyServices}
+                onValueChange={(value) => setShowEmergencyServices(value)}
+                thumbColor="red"
+                trackColor={{ false: "gray", true: "red" }}
+              />
+              <Text>Emergency Services</Text>
             </View>
           </View>
         )}
