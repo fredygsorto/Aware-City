@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, TouchableOpacity, Modal  } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Modal } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import * as Linking from 'expo-linking';   
@@ -22,6 +22,15 @@ export default function Boxes(){
                     </View>
                 </View>
             </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => Linking.openURL('https://www.coalitionforthehomeless.org/our-programs/first-step-job-training/first-step/')}>
+                <View style={styles.box}>
+                    <View style={styles.inner}>
+                    <Ionicons name="briefcase-sharp" size={20} color="green" />
+                        <Text style={styles.text}>Job Training Program</Text>
+                    </View>
+                </View>
+            </TouchableOpacity>  
             
             <TouchableOpacity onPress={() => setModalVisible2(true)}>
                 <View style={styles.box}>
