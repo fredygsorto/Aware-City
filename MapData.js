@@ -66,19 +66,6 @@ export const markers = [
   },
   {
     coordinate: {
-      latitude: 40.745201,
-      longitude: -73.981483,
-    },
-    pinColor: "blue",
-    title: "Mainchance Drop-In Center",
-    description: "Homeless Shelter",
-    address: "120 E 32nd St, New York, NY 10016",
-    hours: "No data found",
-    phone: "(917) 677-4450",
-    type: "homeless_shelter",
-  },
-  {
-    coordinate: {
       latitude: 40.75243,
       longitude: -73.97214,
     },
@@ -742,7 +729,8 @@ export const markers = [
     },
     pinColor: "magenta",
     title: "NYC Health + Hospitals/Gotham Health",
-    description:"Immigration Advocacy and Legal Services - Cumberland – NYLAG (LegalHealth)",
+    description:
+      "Immigration Advocacy and Legal Services - Cumberland – NYLAG (LegalHealth)",
     address: "100 N Portland Ave., 2nd Fl., Room 218, Brooklyn, NY 11205",
     hours: "Mon-Thurs 8AM-7PM",
     phone: "(844) 692-4692",
@@ -757,7 +745,8 @@ export const markers = [
     pinColor: "magenta",
     title: "Kings County - SNAP",
     description: "SNAP Enroller",
-    address: "451 Clarkson Ave., R Bldg., Financial Services, Brooklyn, NY 11203",
+    address:
+      "451 Clarkson Ave., R Bldg., Financial Services, Brooklyn, NY 11203",
     hours: "Open 24 Hours",
     phone: "(718) 245-3131",
     type: "social_services",
@@ -854,7 +843,8 @@ export const markers = [
     },
     pinColor: "magenta",
     title: "SCO Family of Services – Center for Family Life",
-    description:"Financial Assistance - Community Service Program – Single Stop",
+    description:
+      "Financial Assistance - Community Service Program – Single Stop",
     address: "443 39th St., Brooklyn, NY 11232",
     hours: "Mon-Fri 9AM-5PM",
     phone: "(718) 438-9500",
@@ -940,7 +930,8 @@ export const markers = [
     },
     pinColor: "orange",
     title: "The Salvation Army",
-    description: "Bills, food, education, pregnancy support, immigration services and more",
+    description:
+      "Bills, food, education, pregnancy support, immigration services and more",
     address: "22 Quincy St. Brooklyn, NY",
     hours: "No data found",
     phone: "No data found",
@@ -960,7 +951,7 @@ export const markers = [
     phone: "(347) 473-7400",
     type: "donation_centers",
   },
-  
+
   // Start of Bk Emergency Services
   {
     coordinate: {
@@ -1031,585 +1022,541 @@ export const markers = [
     phone: "(718) 245 3131",
     type: "emergency_services",
   },
-  
-// Start of Queens data
-{
-  coordinate: {
-    latitude: 40.7188721,
-    longitude: -73.8233677,
+
+  // Start of Queens data
+  {
+    coordinate: {
+      latitude: 40.7188721,
+      longitude: -73.8233677,
+    },
+    pinColor: "green",
+    title: "Kehilat Sephardim Food Pantry",
+    description: "Food Pantry",
+    address: "15062 78th Rd, Queens, NY 11367",
+    hours: "Mon / Wed 10AM-2PM | Tue / Thu 11AM-1PM | Sun 10AM-4PM",
+    phone: "(718) 591-9574",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Kehilat Sephardim Food Pantry",
-  description: "Food Pantry",
-  address: "15062 78th Rd, Queens, NY 11367",
-  hours: "Mon / Wed 10AM-2PM | Tue / Thu 11AM-1PM | Sun 10AM-4PM",
-  phone: "(718) 591-9574",
-  type:"food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.7641071,
-    longitude: -73.8286116,
+  {
+    coordinate: {
+      latitude: 40.7641071,
+      longitude: -73.8286116,
+    },
+    pinColor: "green",
+    title: "Buddhist Tzu Chi Foundation, Northeast Regional Headquarter",
+    description: "Food Pantry",
+    address: "137-77 Northern Blvd, Flushing, NY 11354",
+    hours: "Mon-Sun: 10AM - 5PM",
+    phone: "(718) 460-4590",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Buddhist Tzu Chi Foundation, Northeast Regional Headquarter",
-  description: "Food Pantry",
-  address: "137-77 Northern Blvd, Flushing, NY 11354",
-  hours: "Mon-Sun: 10AM - 5PM",
-  phone: "(718) 460-4590",
-  type:"food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.752484,
-    longitude: -73.8803015,
+  {
+    coordinate: {
+      latitude: 40.752484,
+      longitude: -73.8803015,
+    },
+    pinColor: "green",
+    title: "The Salvation Army Queens Temple",
+    description: "Food Pantry",
+    address: "86-07 35th Ave, Jackson Heights, NY 11372",
+    hours: "Mon/Sun 24HRS | Tue/Wed Sat 9AM - 9PM | Thurs - Sat 9AM - 1PM",
+    phone: "(718) 335-3693",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "The Salvation Army Queens Temple",
-  description: "Food Pantry",
-  address: "86-07 35th Ave, Jackson Heights, NY 11372",
-  hours: "Mon/Sun 24HRS | Tue/Wed Sat 9AM - 9PM | Thurs - Sat 9AM - 1PM",
-  phone: "(718) 335-3693",
-  type:"food_pantry",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.731998 ,
-    longitude: -73.850718,
+  {
+    coordinate: {
+      latitude: 40.731998,
+      longitude: -73.850718,
+    },
+    pinColor: "yellow",
+    title: "Masbia of Queens",
+    description: "Soup Kitchen",
+    address: "105 - 47 64th Rd, Queens, NY 11375",
+    hours: "Mon-Thurs: 3PM - 7PM / Sun: 3PM - 7PM ",
+    phone: "(718) 534-7321",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "Masbia of Queens",
-  description: "Soup Kitchen",
-  address: "105 - 47 64th Rd, Queens, NY 11375",
-  hours: "Mon-Thurs: 3PM - 7PM / Sun: 3PM - 7PM ",
-  phone: "(718) 534-7321",
-  type:"soup_kitchen",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.7068082,
-    longitude: -73.790859,
+  {
+    coordinate: {
+      latitude: 40.7068082,
+      longitude: -73.790859,
+    },
+    pinColor: "yellow",
+    title: "Bethesda Missionary Baptist Church",
+    description: "Soup Kitchen",
+    address: "179-09 Jamaica Ave Jamaica,NY 11432",
+    hours: "Thurs: 12PM - 1:30PM",
+    phone: "(718) 297-5908",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "Bethesda Missionary Baptist Church",
-  description: "Soup Kitchen",
-  address: "179-09 Jamaica Ave Jamaica,NY 11432",
-  hours: "Thurs: 12PM - 1:30PM",
-  phone: "(718) 297-5908",
-  type:"soup_kitchen",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.6964475 ,
-    longitude: -73.8048727,
+  {
+    coordinate: {
+      latitude: 40.6964475,
+      longitude: -73.8048727,
+    },
+    pinColor: "yellow",
+    title: "Rush Temple AME Zion Church",
+    description: "Soup Kitchen",
+    address: "119-48 Sutphin Boulevard Jamaica, NY 11436",
+    hours: "Wed/Fri: 12PM - 1:30PM",
+    phone: "(718) 529-571",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "Rush Temple AME Zion Church",
-  description: "Soup Kitchen",
-  address: "119-48 Sutphin Boulevard Jamaica, NY 11436",
-  hours: "Wed/Fri: 12PM - 1:30PM", 
-  phone: "(718) 529-571",
-  type:"soup_kitchen",
-},
 
-{
-  coordinate: {
-    latitude: 40.7702028, 
-    longitude: -73.8757694,
+  {
+    coordinate: {
+      latitude: 40.7702028,
+      longitude: -73.8757694,
+    },
+    pinColor: "blue",
+    title: "The Landing Family",
+    description: "Homeless Shelter",
+    address: "94-00 Ditmars Blvd, Queens, NY 11369",
+    hours: "Mon - Sun 24HRS",
+    phone: "(718) 226-0414",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: "The Landing Family",
-  description: "Homeless Shelter",
-  address: "94-00 Ditmars Blvd, Queens, NY 11369", 
-  hours: "Mon - Sun 24HRS",
-  phone: "(718) 226-0414",
-  type: "homeless_shelter",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.7015513,
-    longitude: -73.8042052,
+  {
+    coordinate: {
+      latitude: 40.7015513,
+      longitude: -73.8042052,
+    },
+    pinColor: "blue",
+    title: "Restfull Nights Organization",
+    description: "Homeless Shelter",
+    address: "106-38 150th St, Jamaica, NY 11435",
+    hours: "Mon - Fri 10M - 5PM | Sat 12PM - 4PM",
+    phone: "(718) 954-5744",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: "Restfull Nights Organization",
-  description: "Homeless Shelter",
-  address: "106-38 150th St, Jamaica, NY 11435",
-  hours: "Mon - Fri 10M - 5PM | Sat 12PM - 4PM", 
-  phone: "(718) 954-5744",
-  type: "homeless_shelter",
-},
 
-
-
-
-{
-  coordinate: {
-    latitude:40.635182 ,
-    longitude: -73.7399152,
+  {
+    coordinate: {
+      latitude: 40.635182,
+      longitude: -73.7399152,
+    },
+    pinColor: "blue",
+    title: "Homes For the Homeless",
+    description: "Homeless Shelter",
+    address: "17515 Rockaway Blvd, Queens, NY 11434",
+    hours: "Mon - Fri 24HRS",
+    phone: "(718) 244-0670",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: "Homes For the Homeless",
-  description: "Homeless Shelter",
-  address: "17515 Rockaway Blvd, Queens, NY 11434", 
-  hours: "Mon - Fri 24HRS",
-  phone: "(718) 244-0670",
-  type: "homeless_shelter",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.74773,
-    longitude: -73.939525 ,
+  {
+    coordinate: {
+      latitude: 40.74773,
+      longitude: -73.939525,
+    },
+    pinColor: "blue",
+    title: " ACE Programs for the Homeless",
+    description: "Homeless Shelter",
+    address: "30-30 Northern Blvd b100, Queens, NY 11101 ",
+    hours: " Mon - Fri: 9AM - 5PM  ",
+    phone: "(212) 274-0550",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: " ACE Programs for the Homeless",
-  description: "Homeless Shelter",
-  address: "30-30 Northern Blvd b100, Queens, NY 11101 ", 
-  hours: " Mon - Fri: 9AM - 5PM  ", 
-  phone: "(212) 274-0550", 
-  type: "homeless_shelter",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.591842,
-    longitude: -73.7935089,
+  {
+    coordinate: {
+      latitude: 40.591842,
+      longitude: -73.7935089,
+    },
+    pinColor: "blue",
+    title: " Core Beach Residence Shelter",
+    description: "Homeless Shelter",
+    address: " 316 Beach 65th St, Queens, NY 11692",
+    hours: " Mon - Sun: 24HRS   ",
+    phone: "(718) 732-0509 ",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: " Core Beach Residence Shelter",
-  description: "Homeless Shelter",
-  address: " 316 Beach 65th St, Queens, NY 11692", 
-  hours: " Mon - Sun: 24HRS   ", 
-  phone: "(718) 732-0509 ", 
-  type: "homeless_shelter",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.5913917,
-    longitude: -73.7861912,
+  {
+    coordinate: {
+      latitude: 40.5913917,
+      longitude: -73.7861912,
+    },
+    pinColor: "magenta",
+    title: "CAMBA",
+    description: "Social Services",
+    address: "57-11 Beach 56th Pl, Arverne, NY 11692",
+    hours: "Mon - Fri: 9AM - 5PM",
+    phone: "(718) 675-3347",
+    type: "social_services",
   },
-  pinColor: "magenta",
-  title: "CAMBA",
-  description: "Social Services",
-  address: "57-11 Beach 56th Pl, Arverne, NY 11692", 
-  hours: "Mon - Fri: 9AM - 5PM", 
-  phone: "(718) 675-3347",
-  type: "social_services",
-},
 
-
-
-{
-  coordinate: {
-    latitude:40.6033991 ,
-    longitude: -73.7515568,
+  {
+    coordinate: {
+      latitude: 40.6033991,
+      longitude: -73.7515568,
+    },
+    pinColor: "magenta",
+    title:
+      "Catholic Charities Neighborhood Services Homebase Homeless Prevention",
+    description: "Social Services",
+    address: "18-47 Mott Ave, Far Rockaway, NY 11691",
+    hours: "Mon-Fri: 9AM - 5PM",
+    phone: "(718) 647-1015",
+    type: "social_services",
   },
-  pinColor: "magenta",
-  title: "Catholic Charities Neighborhood Services Homebase Homeless Prevention",
-  description: "Social Services",
-  address: "18-47 Mott Ave, Far Rockaway, NY 11691", 
-  hours: "Mon-Fri: 9AM - 5PM", 
-  phone: "(718) 647-1015",
-  type : "social_services",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.6613421,
-    longitude: -73.7683904,
+  {
+    coordinate: {
+      latitude: 40.6613421,
+      longitude: -73.7683904,
+    },
+    pinColor: "magenta",
+    title: "Springfield Family Residence",
+    description: "Social Services",
+    address: "146-80 Guy R Brewer Blvd, Queens, NY 11434",
+    hours: "Mon - Sun: 24HRS",
+    phone: "(718) 521-5090",
+    type: "social_services",
   },
-  pinColor: "magenta",
-  title: "Springfield Family Residence",
-  description: "Social Services",
-  address: "146-80 Guy R Brewer Blvd, Queens, NY 11434", 
-  hours: "Mon - Sun: 24HRS", 
-  phone: "(718) 521-5090",
-  type: "social_services",
-},
 
-{
-  coordinate: {
-    latitude: 40.713961 ,
-    longitude: -73.823757,
+  {
+    coordinate: {
+      latitude: 40.713961,
+      longitude: -73.823757,
+    },
+    pinColor: "purple",
+    title: "Care For Homeless",
+    description: "Clothing Center ",
+    address: "8020 134th St, Jamaica, NY 11435 ",
+    hours: " No data found ",
+    phone: "(718) 520-0491 ",
+    type: "donation_centers",
   },
-  pinColor: "purple",
-  title: "Care For Homeless",
-  description: "Clothing Center ",
-  address: "8020 134th St, Jamaica, NY 11435 ", 
-  hours: " No data found ", 
-  phone: "(718) 520-0491 ",
-  type: "donation_centers",
-},
-{
-  coordinate: {
-    latitude: 40.558906,
-    longitude: -73.922758,
+  {
+    coordinate: {
+      latitude: 40.558906,
+      longitude: -73.922758,
+    },
+    pinColor: "green",
+    title: "St. Rose Of Lima St Vincent De Paul",
+    description: "Food Pantry",
+    address: "130 Beach 84th Street Queens, NY - 11693",
+    hours: "Tue / Fri: 10AM - 12PM",
+    phone: "(718) 634-7394",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "St. Rose Of Lima St Vincent De Paul", 
-  description: "Food Pantry",
-  address: "130 Beach 84th Street Queens, NY - 11693",
-  hours: "Tue / Fri: 10AM - 12PM",
-  phone: "(718) 634-7394",
-  type: "food_pantry",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.699691,
-    longitude: -73.8072945,
+  {
+    coordinate: {
+      latitude: 40.699691,
+      longitude: -73.8072945,
+    },
+    pinColor: "green",
+    title: "Blanche Memorial Church",
+    description: "Food Pantry",
+    address: "10974 Sutphin Blvd, Jamaica, NY - 11435",
+    hours: " No data found ",
+    phone: "(718) 658-2458",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Blanche Memorial Church", 
-  description: "Food Pantry",
-  address: "10974 Sutphin Blvd, Jamaica, NY - 11435",
-  hours: " No data found ",
-  phone: "(718) 658-2458",
-  type: "food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.710222,
-    longitude: -73.821263,
+  {
+    coordinate: {
+      latitude: 40.710222,
+      longitude: -73.821263,
+    },
+    pinColor: "green",
+    title: "Brooks Memorial United Methodist Church",
+    description: "Food Pantry",
+    address: "143-22 109th Ave. Queens, NY - 11435",
+    hours: "Tue-Fri: 9AM - 3PM | Sun-Mon: 9AM-3PM",
+    phone: "(718) 658-8822",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Brooks Memorial United Methodist Church", 
-  description: "Food Pantry",
-  address: "143-22 109th Ave. Queens, NY - 11435",
-  hours: "Tue-Fri: 9AM - 3PM | Sun-Mon: 9AM-3PM",
-  phone: "(718) 658-8822",
-  type: "food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.7184768,
-    longitude: -73.7578857,
+  {
+    coordinate: {
+      latitude: 40.7184768,
+      longitude: -73.7578857,
+    },
+    pinColor: "green",
+    title: "Church Of The Incarnation Incarnation Parish Pantry",
+    description: "Food Pantry",
+    address: "89-42 Francis Lewis Blvd. Queens, NY - 11427",
+    hours: "No data found",
+    phone: "(718) 465-8534",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Church Of The Incarnation Incarnation Parish Pantry", 
-  description: "Food Pantry",
-  address: "89-42 Francis Lewis Blvd. Queens, NY - 11427",
-  hours: "No data found",
-  phone: "(718) 465-8534",
-  type: "food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.6922685,
-    longitude: -73.7985767,
+  {
+    coordinate: {
+      latitude: 40.6922685,
+      longitude: -73.7985767,
+    },
+    pinColor: "green",
+    title: "J-cap Queens Village Committee",
+    description: "Food Pantry",
+    address: "116-30 Sutphin Blvd. Queens, NY - 11434",
+    hours: "No data found",
+    phone: "(718) 712-1100",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "J-cap Queens Village Committee", 
-  description: "Food Pantry",
-  address: "116-30 Sutphin Blvd. Queens, NY - 11434",
-  hours: "No data found",
-  phone: "(718) 712-1100",
-  type: "food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.708185,
-    longitude: -73.799144,
+  {
+    coordinate: {
+      latitude: 40.708185,
+      longitude: -73.799144,
+    },
+    pinColor: "green",
+    title: "Jamaica Sda Church",
+    description: "Food Pantry",
+    address: "88-28 163rd St. Queens, NY - 11432",
+    hours: "No data found",
+    phone: "(718) 297-1113",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Jamaica Sda Church", 
-  description: "Food Pantry",
-  address: "88-28 163rd St. Queens, NY - 11432",
-  hours: "No data found",
-  phone: "(718) 297-1113",
-  type: "food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.635182,
-    longitude: -73.7399152,
+  {
+    coordinate: {
+      latitude: 40.635182,
+      longitude: -73.7399152,
+    },
+    pinColor: "green",
+    title: "Morris Brown Ame Church - Helping Hand",
+    description: "Food Pantry",
+    address: "14503 Rockaway Blvd. Queens, NY - 11436",
+    hours: "No data found",
+    phone: "(718) 322-7596",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Morris Brown Ame Church - Helping Hand", 
-  description: "Food Pantry",
-  address: "14503 Rockaway Blvd. Queens, NY - 11436",
-  hours: "No data found",
-  phone: "(718) 322-7596",
-  type: "food_pantry",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.7617909,
-    longitude: -73.8127585,
+  {
+    coordinate: {
+      latitude: 40.7617909,
+      longitude: -73.8127585,
+    },
+    pinColor: "green",
+    title: " MHNA",
+    description: "Food Pantry",
+    address: "150-20 Barclay Ave Queens, NY - 11355",
+    hours: "No data found",
+    phone: "(646) 584-9118",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: " MHNA", 
-  description: "Food Pantry",
-  address: "150-20 Barclay Ave Queens, NY - 11355",
-  hours: "No data found",
-  phone: "(646) 584-9118",
-  type: "food_pantry",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.7229642,
-    longitude: -73.7364344,
+  {
+    coordinate: {
+      latitude: 40.7229642,
+      longitude: -73.7364344,
+    },
+    pinColor: "green",
+    title: "Our Lady Of Lourdes",
+    description: "Food Pantry",
+    address: "92-96 220th Street Queens, NY - 11428",
+    hours: " Mon - Sat: 9AM - 8PM | Sun 10AM - 2PM",
+    phone: " (718) 479-0924",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Our Lady Of Lourdes",
-  description: "Food Pantry",
-  address: "92-96 220th Street Queens, NY - 11428",
-   hours: " Mon - Sat: 9AM - 8PM | Sun 10AM - 2PM", 
-  phone: " (718) 479-0924",
-  type: "food_pantry",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.7057429,
-    longitude: -73.7945301,
+  {
+    coordinate: {
+      latitude: 40.7057429,
+      longitude: -73.7945301,
+    },
+    pinColor: "green",
+    title: "Tabernacle Of Prayer",
+    description: "Food Pantry",
+    address: "165-11 Jamaica Ave Queens, NY - 11432",
+    hours: "No data found ",
+    phone: "(718) 657-4210",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Tabernacle Of Prayer",
-  description: "Food Pantry",
-  address: "165-11 Jamaica Ave Queens, NY - 11432",
-   hours: "No data found ", 
-  phone: "(718) 657-4210",
-  type: "food_pantry",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.6951974,
-    longitude: -73.7816982,
+  {
+    coordinate: {
+      latitude: 40.6951974,
+      longitude: -73.7816982,
+    },
+    pinColor: "green",
+    title: "Allen A.M.E. Cathedral Food Pantry ",
+    description: "Food Pantry",
+    address: "110-31 Merrick Boulevard Queens, NY - 11433",
+    hours: "No data found ",
+    phone: "(718) 206-4600",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Allen A.M.E. Cathedral Food Pantry ",
-  description: "Food Pantry",
-  address: "110-31 Merrick Boulevard Queens, NY - 11433",
-   hours: "No data found ", 
-  phone: "(718) 206-4600",
-  type: "food_pantry",
-},
 
-
-
-{
-  coordinate: {
-    latitude: 40.7531892,
-    longitude: -73.9467482,
+  {
+    coordinate: {
+      latitude: 40.7531892,
+      longitude: -73.9467482,
+    },
+    pinColor: "green",
+    title: "Hour Children Food Pantry",
+    description: "Food Pantry",
+    address: "3649 11th Street Queens, NY - 11106",
+    hours: "No data found ",
+    phone: "(718) 482-8226",
+    type: "food_pantry",
   },
-  pinColor: "green",
-  title: "Hour Children Food Pantry",
-  description: "Food Pantry",
-  address: "3649 11th Street Queens, NY - 11106",
-   hours: "No data found ", 
-  phone: "(718) 482-8226",
-  type: "food_pantry",
-},
 
-{
-  coordinate: {
-    latitude: 40.5920937 ,
-    longitude: -73.786128,
+  {
+    coordinate: {
+      latitude: 40.5920937,
+      longitude: -73.786128,
+    },
+    pinColor: "blue",
+    title: "Rockaway terrace men's R/A shelter",
+    description: "Homeless Shelter",
+    address: "43-17 Rockaway Beach Blvd, Queens, NY 11691",
+    hours: "Mon - Sun: 24 HRS",
+    phone: "(315) 239-8490",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: "Rockaway terrace men's R/A shelter",
-  description: "Homeless Shelter",
-  address: "43-17 Rockaway Beach Blvd, Queens, NY 11691",
-   hours: "Mon - Sun: 24 HRS", 
-  phone: "(315) 239-8490",
-  type: "homeless_shelter",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.7520363 ,
-    longitude:  -73.9354882,
+  {
+    coordinate: {
+      latitude: 40.7520363,
+      longitude: -73.9354882,
+    },
+    pinColor: "blue",
+    title: "Pam’s Place Shelter",
+    description: "Homeless Shelter",
+    address: "40-03 29th St, Queens, NY 11101",
+    hours: "No data found",
+    phone: "(929) 522-0705 ",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: "Pam’s Place Shelter",
-  description: "Homeless Shelter",
-  address: "40-03 29th St, Queens, NY 11101",
-   hours: "No data found", 
-  phone: "(929) 522-0705 ",
-  type: "homeless_shelter",
-},
 
-
-{
-  coordinate: {
-    latitude: 40.705439 ,
-    longitude:  -73.788803,
+  {
+    coordinate: {
+      latitude: 40.705439,
+      longitude: -73.788803,
+    },
+    pinColor: "blue",
+    title: " Housing Bridge",
+    description: "Homeless Shelter",
+    address: "170-02 93rd Ave, Jamaica, NY 11433 ",
+    hours: "No data found",
+    phone: "No data found ",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: " Housing Bridge",
-  description: "Homeless Shelter",
-  address: "170-02 93rd Ave, Jamaica, NY 11433 ",
-   hours: "No data found", 
-  phone: "No data found ",
-  type: "homeless_shelter",
-},
 
-{
-  coordinate: {
-    latitude:  40.666137,
-    longitude:  -73.807512,
+  {
+    coordinate: {
+      latitude: 40.666137,
+      longitude: -73.807512,
+    },
+    pinColor: "blue",
+    title: " Skyway Men Shelter",
+    description: "Homeless Shelter",
+    address: "132-10 S Conduit Ave, Jamaica, NY 11430 ",
+    hours: "Mon - Sun: 24HRS",
+    phone: "(718) 659-6300 ",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: " Skyway Men Shelter",
-  description: "Homeless Shelter",
-  address: "132-10 S Conduit Ave, Jamaica, NY 11430 ",
-   hours: "Mon - Sun: 24HRS", 
-  phone: "(718) 659-6300 ",
-  type: "homeless_shelter",
-},
 
-{
-  coordinate: {
-    latitude:  40.7666392,
-    longitude:  -73.8649408,
+  {
+    coordinate: {
+      latitude: 40.7666392,
+      longitude: -73.8649408,
+    },
+    pinColor: "blue",
+    title: " Housing Partners of Ny",
+    description: "Homeless Shelter",
+    address: "10210 Ditmars Blvd, East Elmhurst, NY 11369",
+    hours: "No data found",
+    phone: "No data found",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: " Housing Partners of Ny",
-  description: "Homeless Shelter",
-  address: "10210 Ditmars Blvd, East Elmhurst, NY 11369",
-   hours: "No data found", 
-  phone: "No data found",
-  type: "homeless_shelter",
-},
 
-{
-  coordinate: {
-    latitude:  40.715407,
-    longitude: -73.824438 ,
+  {
+    coordinate: {
+      latitude: 40.715407,
+      longitude: -73.824438,
+    },
+    pinColor: "blue",
+    title: " Briarwood Residence",
+    description: "Homeless Shelter",
+    address: " 80-20 134th St, Briarwood, NY 11435",
+    hours: "No data found",
+    phone: " (718) 268-4539",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: " Briarwood Residence",
-  description: "Homeless Shelter",
-  address: " 80-20 134th St, Briarwood, NY 11435",
-   hours: "No data found", 
-  phone: " (718) 268-4539",
-  type: "homeless_shelter",
-},
 
-
-
-{
-  coordinate: {
-    latitude:   40.7702028,
-    longitude:   -73.8757694,
+  {
+    coordinate: {
+      latitude: 40.7702028,
+      longitude: -73.8757694,
+    },
+    pinColor: "blue",
+    title: "The Landing Family Shelter",
+    description: "Homeless Shelter",
+    address: "94-00 Ditmars Blvd, Queens, NY 11369",
+    hours: "Mon-Sun: 24HRS",
+    phone: "(718) 226-0414 ",
+    type: "homeless_shelter",
   },
-  pinColor: "blue",
-  title: "The Landing Family Shelter",
-  description: "Homeless Shelter",
-  address: "94-00 Ditmars Blvd, Queens, NY 11369",
-   hours: "Mon-Sun: 24HRS", 
-  phone: "(718) 226-0414 ",
-  type: "homeless_shelter",
-},
 
-
-{
-  coordinate: {
-    latitude:  40.6989447,
-    longitude:  -73.7956733,
+  {
+    coordinate: {
+      latitude: 40.6989447,
+      longitude: -73.7956733,
+    },
+    pinColor: "yellow",
+    title: "Faith Tabernacle Baptist Church",
+    description: "Soup Kitchen",
+    address: "10645 160th St, Jamaica, NY 11433",
+    hours: "No data found",
+    phone: "No data found",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "Faith Tabernacle Baptist Church",
-  description: "Soup Kitchen",
-  address: "10645 160th St, Jamaica, NY 11433",
-   hours: "No data found", 
-  phone: "No data found",
-  type: "soup_kitchen",
-},
 
-
-{
-  coordinate: {
-    latitude:  40.7616138,
-    longitude:  -73.8687355,
+  {
+    coordinate: {
+      latitude: 40.7616138,
+      longitude: -73.8687355,
+    },
+    pinColor: "yellow",
+    title: "First Baptist Church East Elmhurst",
+    description: "Soup Kitchen",
+    address: "100-10 Astoria Blvd, Queens, NY 11369",
+    hours: "Tue - Fri: 9AM-4PM |Sat: 12PM-2PM|Sun: 10:30AM-12PM ",
+    phone: "(718) 446-0200",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "First Baptist Church East Elmhurst",
-  description: "Soup Kitchen",
-  address: "100-10 Astoria Blvd, Queens, NY 11369",
-   hours: "Tue - Fri: 9AM-4PM |Sat: 12PM-2PM|Sun: 10:30AM-12PM ", 
-  phone: "(718) 446-0200",
-  type: "soup_kitchen",
-},
 
-
-
-{
-  coordinate: {
-    latitude:  40.674225,
-    longitude:  -73.799848,
+  {
+    coordinate: {
+      latitude: 40.674225,
+      longitude: -73.799848,
+    },
+    pinColor: "yellow",
+    title: "Morris Brown Ame Church",
+    description: "Soup Kitchen",
+    address: "14503 Rockaway Blvd, Jamaica, NY 11436",
+    hours: "No data found",
+    phone: " (718) 322-7596",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "Morris Brown Ame Church",
-  description: "Soup Kitchen",
-  address: "14503 Rockaway Blvd, Jamaica, NY 11436",
-   hours: "No data found", 
-  phone: " (718) 322-7596",
-  type: "soup_kitchen",
-},
 
-
-{
-  coordinate: {
-    latitude:  40.6947734,
-    longitude:  -73.7517811,
+  {
+    coordinate: {
+      latitude: 40.6947734,
+      longitude: -73.7517811,
+    },
+    pinColor: "yellow",
+    title: "St. Albans Gospel Assembly",
+    description: "Soup Kitchen",
+    address: "200-25 Linden Blvd. Queens, NY - 11412",
+    hours: "No data found",
+    phone: "(718) 341-1719",
+    type: "soup_kitchen",
   },
-  pinColor: "yellow",
-  title: "St. Albans Gospel Assembly",
-  description: "Soup Kitchen",
-  address: "200-25 Linden Blvd. Queens, NY - 11412",
-   hours: "No data found", 
-  phone: "(718) 341-1719",
-  type: "soup_kitchen",
-},
 
-
-// ----------------------END of QUEENS/START OF BRONX-----------------------
+  // ----------------------END of QUEENS/START OF BRONX-----------------------
   {
     coordinate: {
       latitude: 40.8205,
@@ -1623,7 +1570,6 @@ export const markers = [
     phone: "(718) 993-5161",
     type: "homeless_shelter",
   },
-
   {
     coordinate: {
       latitude: 40.84066,
@@ -2880,6 +2826,188 @@ export const markers = [
     phone: "(718) 918-5000",
     type: "emergency_services",
   },
+  {
+    coordinate: {
+      latitude: 40.721976,
+      longitude: -73.9928387,
+    },
+    pinColor: "blue",
+    title: "The Bowery Mission",
+    description: "Homeless Shelter",
+    address: "227 Bowery, New York, NY 10002",
+    hours: "Open 24 hours",
+    phone: "(212) 674-3456",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7449214,
+      longitude: -73.9930338,
+    },
+    pinColor: "blue",
+    title: "BRC Men's Shelter",
+    description: "Homeless Shelter",
+    address: "127 W 25th St, New York, NY 10001",
+    hours: "",
+    phone: "(212) 803-5700",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7452966,
+      longitude: -73.9814729,
+    },
+    pinColor: "blue",
+    title: "Mainchance Drop-In Center",
+    description: "Homeless Shelter",
+    address: "120 E 32nd St, New York, NY 10016",
+    hours: "Open 24 hours",
+    phone: "(212) 883-0680",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7495377,
+      longitude: -73.994418,
+    },
+    pinColor: "blue",
+    title: "Antonio Olivieri Center",
+    description: "Homeless Shelter",
+    address: "257 W 30th St, New York, NY 10001",
+    hours: "Open 24 hours",
+    phone: "(212) 947-3211",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7259278,
+      longitude: -73.9909496,
+    },
+    pinColor: "blue",
+    title: "Project Renewal Third Street Men's Shelter",
+    description: "Homeless Shelter",
+    address: "8 E 3rd St #8908, New York, NY 10003",
+    hours: "No data found",
+    phone: "(212) 533-8400",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7184278,
+      longitude: -73.9765656,
+    },
+    pinColor: "blue",
+    title: "Urban Family Center",
+    description: "Homeless Shelter",
+    address: "130 Baruch Pl, New York, NY 10003",
+    hours: "No data found",
+    phone: "(212) 475-6400",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7175176,
+      longitude: -74.0015609,
+    },
+    pinColor: "blue",
+    title: "The Bowery Mission - Tribeca Campus",
+    description: "Homeless Shelter",
+    address: "90 Lafayette St, New York, NY 10013",
+    hours: "Open 24 hours",
+    phone: "(212) 226-6214",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7581155,
+      longitude: -73.9923612,
+    },
+    pinColor: "blue",
+    title: "American Homestay",
+    description: "Homeless Shelter",
+    address: "360 W 42nd St, New York, NY 10036",
+    hours: "Mon-Fri 11AM-4Pm",
+    phone: "(212) 760-3015",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7962047,
+      longitude: -73.9681041,
+    },
+    pinColor: "blue",
+    title: "Trinity Place Shelter",
+    description: "Homeless Shelter",
+    address: "164 W 100th St, New York, NY 10025",
+    hours: "No data found",
+    phone: "(646) 580-7045",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7050651,
+      longitude: -74.01179,
+    },
+    pinColor: "blue",
+    title: "Department of Homeless Services",
+    description: "Homeless Shelter",
+    address: "33 Beaver St, New York, NY 10004",
+    hours: "Mon-Fri 9AM-5PM",
+    phone: "(212) 361-8000",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.72362,
+      longitude: -73.9841636,
+    },
+    pinColor: "blue",
+    title: "Nazareth Housing",
+    description: "Homeless Shelter",
+    address: "206 E 4th St, New York, NY 10009",
+    hours: "No data found",
+    phone: "(212) 477-7017",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7878907,
+      longitude: -73.9738998,
+    },
+    pinColor: "blue",
+    title: "Capitol Hall Residence",
+    description: "Homeless Shelter",
+    address: "166 W 87th St, New York, NY 10024",
+    hours: "No data found",
+    phone: "(212) 724-1000",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.79615,
+      longitude: -73.9372603,
+    },
+    pinColor: "blue",
+    title: "The Bowery Mission - East Harlem Campus",
+    description: "Homeless Shelter",
+    address: "315 E 115th St, New York, NY 10029",
+    hours: "No data found",
+    phone: "(212) 226-6214",
+    type: "homeless_shelter",
+  },
+  {
+    coordinate: {
+      latitude: 40.7886275,
+      longitude: -73.979951,
+    },
+    pinColor: "blue",
+    title: "Valley Lodge",
+    description: "Homeless Shelter",
+    address: "340 W 85th St, New York, NY 10025",
+    hours: "No data found",
+    phone: "212) 678-0570",
+    type: "homeless_shelter",
+  },
 ];
 
 const template = [
@@ -2888,12 +3016,12 @@ const template = [
       latitude: 0,
       longitude: 0,
     },
-    pinColor: "green",
+    pinColor: "blue",
     title: "",
-    description: "Food Pantry",
+    description: "Homeless Shelter",
     address: "",
     hours: "",
     phone: "",
-    type: "food_pantry",
+    type: "homeless_shelter",
   },
 ];
