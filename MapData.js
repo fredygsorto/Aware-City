@@ -126,6 +126,8 @@ export const markers = [
     title: "Providence House",
     description: "Transitional Housing and Shelter at Providence House",
     address: "703 Lexington Avenue, Brooklyn, NY 11221",
+    hours: "Mon-Fri 9AM-5PM",
+    phone: "(718) 455 0197",
     type: "homeless_shelter",
   },
   {
@@ -137,105 +139,125 @@ export const markers = [
     title: "Park Slope Armory YMCA",
     description: "Women's Shelter Brooklyn",
     address: "1402 8th Ave, Brooklyn, NY 11215",
+    hours: "Mon-Fri 6AM-9:30PM | Sat-Sun 8AM-5PM",
+    phone: "(212) 912 2580",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.6945228,
-      longitude: -73.9767989,
+      latitude: 40.6946932,
+      longitude: -73.976589,
     },
     pinColor: "blue",
     title: "Auburn Housing",
     description: "Family Housing and Homeless Shelter",
     address: "39 Auburn Place, Brooklyn, NY 11205",
+    hours: "No data found",
+    phone: "(718) 222 1300",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.698111,
-      longitude: -73.983532,
+      latitude: 40.695567,
+      longitude: -73.9822058,
     },
     pinColor: "blue",
     title: "CAMBA men's Shelter",
     description: "Brooklyn - Single Adult Men",
     address: "59-65 Prince Street, Brooklyn, NY 11201",
+    hours: "No data found",
+    phone: "(718) 797 0285",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.669669,
-      longitude: -73.887812,
+      latitude: 40.6737035,
+      longitude: -73.9004093,
     },
     pinColor: "blue",
     title: "Brooklyn HELP",
     description: "Women's 24 hour Shelter",
     address: "104-152 Williams Ave, Brooklyn, NY",
+    hours: "Open 24 Hours",
+    phone: "No data found",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.694888,
-      longitude: -73.926286,
+      latitude: 40.691565,
+      longitude: -73.9251754,
     },
     pinColor: "blue",
     title: "Broadway House",
     description: "Women's Shelter CAMBA - Temporary Shelter",
     address: "1245 Broadway Avenue, Brooklyn, NY 11221",
+    hours: "Mon-Sun 8AM-8PM",
+    phone: "(718) 453-4870",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.675599,
-      longitude: -73.90504,
+      latitude: 40.6757466,
+      longitude: -73.9054019,
     },
     pinColor: "blue",
     title: "CAMBA Gathering Place",
     description: "Drop In Center for Homeless Adults",
     address: "2402 Atlantic Ave, Brooklyn, NY 11233",
+    hours: "Open 24 Hours",
+    phone: "(718) 385 8713",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.71558,
-      longitude: -73.941609,
+      latitude: 40.7165983,
+      longitude: -73.9384311,
     },
     pinColor: "blue",
     title: "Barbara Kleiman Residence",
     description: "Homeless Shelter",
     address: "300 Skillman Ave, Brooklyn, NY 11211",
+    hours: "No data found",
+    phone: "(718) 963 3800",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.675717,
-      longitude: -73.904777,
+      latitude: 40.6757466,
+      longitude: -73.9054019,
     },
     pinColor: "blue",
     title: "Atlantic House",
     description: "Men's Shelter - CAMBA",
     address: "2402 Atlantic Avenue, Brooklyn, NY 11233",
+    hours: "Open 24 Hours",
+    phone: "(718) 385-8713",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.682732,
-      longitude: -73.897204,
+      latitude: 40.6805289,
+      longitude: -73.89201,
     },
     pinColor: "blue",
     title: "Van Siclen Family Residence",
     description: "Transitional Housing for Homeless Families with Children",
     address: "246 Jamaica Avenue, Brooklyn, NY 11207",
+    hours: "No data found",
+    phone: "(718) 235 1464",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.696765,
-      longitude: -73.986035,
+      latitude: 40.6957313,
+      longitude: -73.982145,
     },
     pinColor: "blue",
     title: "Tillary Street",
     description: "Women's Shelter",
     address: "200 Tillary Street, Brooklyn, NY 11201",
+    hours: "Open 24 Hours",
+    phone: "(888) 425 0501",
     type: "homeless_shelter",
   },
   {
@@ -247,553 +269,613 @@ export const markers = [
     title: "Magnolia House",
     description: "Women's Shelter",
     address: "1424 Herkimer St, Brooklyn, NY 11233",
+    hours: "Mon-Sun 8AM-8PM",
+    phone: "(718) 675 3353",
     type: "homeless_shelter",
   },
   {
     coordinate: {
-      latitude: 40.67977,
-      longitude: -73.938017,
+      latitude: 40.6783094,
+      longitude: -73.9139089,
     },
     pinColor: "blue",
     title: "Neighbors Together Corporation",
     description: "Homeless Shelter",
     address: "2094 Fulton Street, Brooklyn, NY 11233",
+    hours: "Mon-Fri 9AM-6PM",
+    phone: "(718) 498 7256",
     type: "homeless_shelter",
   },
 
   {
     coordinate: {
-      latitude: 40.677304,
-      longitude: -73.912507,
+      latitude: 40.6783094,
+      longitude: -73.9139089,
     },
     pinColor: "blue",
     title: "The Gathering Place",
     description: "Homeless Shelter",
     address: "2402 Atlantic Avenue, Brooklyn, NY",
+    hours: "Open 24 Hours",
+    phone: "(718) 385 8726",
     type: "homeless_shelter",
   },
 
   {
     coordinate: {
-      latitude: 40.698937,
-      longitude: -73.902397,
+      latitude: 40.6783094,
+      longitude: -73.9139089,
     },
     pinColor: "blue",
     title: "H.E.L.P.",
     description: "Women's Center",
     address: "116 Williams Avenue, Brooklyn, NY",
+    hours: "Mon-Fri 9AM-5PM",
+    phone: "(718) 368 4700",
     type: "homeless_shelter",
   },
 
   {
     coordinate: {
-      latitude: 40.683701,
-      longitude: -73.956684,
+      latitude: 40.6783094,
+      longitude: -73.9139089,
     },
     pinColor: "blue",
     title: "Lexington Avenue Residence - Bed-Stuy",
     description: "Homless Shelter",
-    address: "85 Lexington Avenue, Brooklyn, NY - 11238",
+    address: "85 Lexington Avenue, Brooklyn, NY 11238",
+    hours: "No data found",
+    phone: "(212) 803 5700",
     type: "homeless_shelter",
   },
   //Brooklyn Food Pantries
   {
     coordinate: {
-      latitude: 40.702059,
-      longitude: -73.939694,
+      latitude: 40.7001967,
+      longitude: -73.9364182,
     },
     pinColor: "green",
     title: "Wellness Rising by Riseboro",
     description: "Food Pantry",
     address: "518 Bushwick Avenue, Brooklyn, NY 11206",
+    hours: "Mon-Fri 8AM-5PM",
+    phone: "(718) 821 0254",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.700776,
-      longitude: -73.994261,
+      latitude: 40.6925402,
+      longitude: -73.9941866,
     },
     pinColor: "green",
     title: "ST. CHARLES BORROMEO",
     description: "Food Pantry",
     address: "19 Sidney Place, Brooklyn, NY 11201",
+    hours: "No data found",
+    phone: "(718) 625 1177",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.631729,
-      longitude: -74.023464,
+      latitude: 40.6323936,
+      longitude: -74.0263168,
     },
     pinColor: "green",
     title: "OUR LADY OF ANGELS",
     description: "Food Pantry",
     address: "330 73rd Street, Brooklyn, NY 11209",
+    hours: "Wednesday 9:30AM-12PM",
+    phone: "(718) 722 6001",
     type: "food_pantry",
   },
-
   {
     coordinate: {
-      latitude: 40.700455,
-      longitude: -73.938752,
+      latitude: 40.6948478,
+      longitude: -73.9363555,
     },
     pinColor: "green",
     title: "ST. JOHN THE BAPTIST",
     description: "Food Pantry",
     address: "333 Hart Street, Brooklyn, NY 11206",
+    hours: "No data found",
+    phone: "No data found",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.634112,
-      longitude: -73.910326,
+      latitude: 40.6388745,
+      longitude: -73.9090953,
     },
     pinColor: "green",
     title: "OUR LADY OF MIRACLES",
     description: "Food Pantry",
     address: "757 East 86th Street, Brooklyn, NY 11236",
+    hours: "Mon-Fri 10AM-5PM",
+    phone: "(718) 257 2400",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.577497,
-      longitude: -73.979083,
+      latitude: 40.5772689,
+      longitude: -73.9850461,
     },
     pinColor: "green",
     title: "OUR LADY OF SOLACE",
     description: "Food Pantry",
     address: "2866 West 17th Street, Brooklyn, NY 11224",
+    hours: "No data found",
+    phone: "(718) 266 1612",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.668074,
-      longitude: -73.94371,
+      latitude: 40.6715082,
+      longitude: -73.9449889,
     },
     pinColor: "green",
     title: "ST. GREGORY THE GREAT",
     description: "Food Pantry",
     address: "244 Brooklyn Avenue, Brooklyn, NY 11213",
+    hours: "No data found",
+    phone: "(718) 773 0100",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.659984,
-      longitude: -73.911209,
+      latitude: 40.6620173,
+      longitude: -73.9051941,
     },
     pinColor: "green",
     title: "OUR LADY OF MERCY",
     description: "Food Pantry",
     address: "680 Mother Gaston Blvd, Brooklyn, NY 11212",
+    hours: "No data found",
+    phone: "(718) 346 3166",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.634312,
-      longitude: -73.981611,
+      latitude: 40.6313927,
+      longitude: -73.9805161,
     },
     pinColor: "green",
     title: "CHURCH OF THE HOLY SPIRIT",
     description: "Food Pantry",
     address: "1712 45th Street, Brooklyn, NY 11204",
+    hours: "No data found",
+    phone: "(718) 436 5565",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.5917473,
-      longitude: -73.9493192,
+      latitude: 40.5879529,
+      longitude: -73.9501747,
     },
     pinColor: "green",
     title: "St. Marks Food Pantry",
     description: "Food Pantry",
     address: "2609 East 19th Street, Brooklyn, NY 11235",
+    hours: "Thursday 9:30AM-11:30PM",
+    phone: "(718) 722 6001",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.6783949,
-      longitude: -73.9148271,
+      latitude: 40.6803594,
+      longitude: -73.9138233,
     },
     pinColor: "green",
     title: "St. Paul Pentecostal Kingdom Builders",
     description: "Food Pantry",
     address: "133 Thomas S. Boyland Street, Brooklyn, NY 11233",
+    hours: "No data found",
+    phone: "(917) 604 9644",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.6880481,
-      longitude: -73.9849047,
+      latitude: 40.6866332,
+      longitude: -73.9802335,
     },
     pinColor: "green",
     title: "Recovery House of Worship",
     description: "Food Pantry",
     address: "360 Schermerhorn Street, Brooklyn, NY 11217",
+    hours: "No data found",
+    phone: "(718) 875 1858",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.7289179,
-      longitude: -73.9522181,
+      latitude: 40.7291929,
+      longitude: -73.9549975,
     },
     pinColor: "green",
     title: "Greenpoint Church Hunger Program",
     description: "Food Pantry",
     address: "136 Milton Street, Brooklyn, NY 11222",
+    hours: "Thursday 4PM-7PM",
+    phone: "(718) 383 5941",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.613838,
-      longitude: -74.008431,
+      latitude: 40.6140123,
+      longitude: -74.000742,
     },
     pinColor: "green",
     title: "Reaching-Out Community Services",
     description: "Food Pantry",
     address: "7708 New Utrecht Avenue, Brooklyn, NY 11214",
+    hours: "Mon-Fri 10AM-5PM",
+    phone: "(917) 509 9055",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.672462,
-      longitude: -73.878258,
+      latitude: 40.6733033,
+      longitude: -73.8667835,
     },
     pinColor: "green",
     title: "Agape Food Rescue",
     description: "Food Pantry",
     address: "1386 Sutter Ave., Brooklyn, NY 11208",
+    hours: "Tues/Sun 9AM-5AM",
+    phone: "(718) 502 1928",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.630203,
-      longitude: -73.943078,
+      latitude: 40.6263386,
+      longitude: -73.9403994,
     },
     pinColor: "green",
     title: "Ammi Evangelical Baptist Church",
     description: "Food Pantry",
     address: "1799 Flatbush Ave, Brooklyn, NY 11210",
+    hours: "No data found",
+    phone: "(718) 692 3925",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.650312,
-      longitude: -73.936568,
+      latitude: 40.6509365,
+      longitude: -73.9415675,
     },
     pinColor: "green",
     title: "Apostolic Assembly Of Jesus Christ",
     description: "Food Pantry",
     address: "3808 Church Ave., Brooklyn, NY 11203",
+    hours: "No data found",
+    phone: "No data found",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.639846,
-      longitude: -74.015579,
+      latitude: 40.6392672,
+      longitude: -74.0146816,
     },
     pinColor: "green",
     title: "Basilica Of Our Lady Of Perpetual Help",
     description: "Food Pantry",
     address: "526 59th Street, Brooklyn, NY 11220",
+    hours: "No data found",
+    phone: "(718) 492 9200",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.629904,
-      longitude: -74.025146,
+      latitude: 40.6336914,
+      longitude: -74.0233106,
     },
     pinColor: "green",
     title: "Bay Ridge Center For Older Adults",
     description: "Food Pantry",
     address: "411 Ovington Ave, Brooklyn, NY 11209",
+    hours: "Mon-Fri 8AM-4PM",
+    phone: "(718) 748 0650",
     type: "food_pantry",
   },
 
   {
     coordinate: {
-      latitude: 40.679555,
-      longitude: -73.915641,
+      latitude: 40.6784806,
+      longitude: -73.9178198,
     },
     pinColor: "green",
     title: "Campaign Against Hunger",
     description: "Food Pantry",
     address: "2010 Fulton Street, Brooklyn, NY 11233",
+    hours: "Mon-Fri 9:30AM-5:30PM",
+    phone: "No data found",
     type: "food_pantry",
   },
   //Brooklyn Soup Kitchens
   {
     coordinate: {
-      latitude: 40.677528,
-      longitude: -73.983961,
+      latitude: 40.678329,
+      longitude: -73.9828382,
     },
     pinColor: "yellow",
     title: "C.H.I.P.S Soup Kitchen",
     description: "Monday - Saturday 9:00 AM to 4:00 PM",
     address: "200 4th Avenue, Brooklyn, NY 11217-3180",
+    hours: "Mon-Fri 8AM-4PM",
+    phone: "(718) 237-2962",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.625697,
-      longitude: -73.965347,
+      latitude: 40.6240453,
+      longitude: -73.9654022,
     },
     pinColor: "yellow",
-    title: "Masbia of Flatbush Soup Kitchen",
-    description: "Monday - Thursday 3:00 PM to 7:00 PM",
+    title: "Masbia of Flatbush",
+    description: "Soup Kitchen",
     address: "1372 Coney Island Avenue, Brooklyn, New York, 11230",
+    hours: "Mon-Thurs 3PM-7PM",
+    phone: "(718) 972-4446",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.675276,
-      longitude: -73.948473,
+      latitude: 40.6747391,
+      longitude: -73.9558069,
     },
     pinColor: "yellow",
-    title: "New Haven SDA Church Soup Kitchen",
-    description: "Sunday 11:00 AM to 2:00 PM",
+    title: "New Haven SDA Church",
+    description: "Soup Kitchen",
     address: "634 Prospect Place, Brooklyn, NY 11216",
+    hours: "Sunday 11:00 AM to 2:00 PM",
+    phone: "(718) 622 0370",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.652087,
-      longitude: -73.957435,
+      latitude: 40.6390028,
+      longitude: -73.9585597,
     },
     pinColor: "yellow",
     title: "Hazel Brooks Senior Ctr. Meals Program",
-    description: "Monday - Friday 9:00 AM to 1:00 PM",
+    description: "Soup Kitchen",
     address: "961 Ocean Avenue Brooklyn NY 11226",
+    hours: "Mon-Fri 9AM to 1PM",
+    phone: "(718) 622-0370",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.717169,
-      longitude: -73.960289,
+      latitude: 40.7167402,
+      longitude: -73.9572004,
     },
     pinColor: "yellow",
-    title: "North Side Senior Center Soup Kitchen",
-    description: "Monday - Friday 8:00 AM - 4:00 PM",
+    title: "North Side Senior Center",
+    description: "Soup Kitchen",
     address: "179 North 6th Street, Brooklyn, NY 11211",
+    hours: "Mon-Fri 8AM to 4PM",
+    phone: "(718) 387-2316",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.666514,
-      longitude: -73.894102,
+      latitude: 40.6614792,
+      longitude: -73.8944819,
     },
     pinColor: "yellow",
     title: "St John’s Bread & Life Mobile Kitchen",
-    description: "Monday 10:00 AM - 10:30 AM",
+    description: "Soup Kitchne",
     address: "339 New Lots Avenue, Brooklyn, NY 11207",
+    hours: "Monday 10PM to 10:30 AM",
+    phone: "(718) 574-0058",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.677546,
-      longitude: -74.006961,
+      latitude: 40.6706521,
+      longitude: -73.9382759,
     },
     pinColor: "yellow",
-    title: "St. John's Bread and Life Mobile Soup Kitchen",
-    description: "Tuesday 11:45 AM - 12:15 PM",
-    address: "98 Richards Street, Brooklyn, NY 11231",
-    type: "soup_kitchen",
-  },
-
-  {
-    coordinate: {
-      latitude: 40.670391,
-      longitude: -73.933753,
-    },
-    pinColor: "yellow",
-    title: "Bethany United Methodist Church Soup Kitchen",
-    description: "Tuesday 12:30 PM - 2:30 PM",
+    title: "Bethany United Methodist Church",
+    description: "Soup Kitchen",
     address: "1208 St. Johns Place, Brooklyn, NY 11213",
+    hours: "Tuesday 12:30 PM - 2:30 PM",
+    phone: "(718) 774-6753",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.676201,
-      longitude: -73.919935,
+      latitude: 40.6781649,
+      longitude: -73.9271674,
     },
     pinColor: "yellow",
-    title: "Calvary Fellowship AME Church Soup Kitchen",
-    description: "Tuesday 12:00 PM - 2:00 PM",
+    title: "Calvary Fellowship AME Church",
+    description: "Soup Kitchen",
     address: "790 Herkimer Street, Brooklyn, NY 11233",
+    hours: "Tuesday 12:00 PM - 2:00 PM",
+    phone: "(718) 467-0987",
     type: "soup_kitchen",
   },
 
   {
     coordinate: {
-      latitude: 40.685564,
-      longitude: -73.979502,
+      latitude: 40.6852799,
+      longitude: -73.9739877,
     },
     pinColor: "yellow",
     title: "Hanson Place SDA - Soup Kitchen",
-    description: "Wednesday / Sunday 1:00 PM - 2:00 PM",
+    description: "Soup Kitchen",
     address: "88 Hanson Place, Brooklyn, NY 11217",
+    hours: "Wednesday / Sunday 1:00 PM - 2:00 PM",
+    phone: "(718) 230-0229",
     type: "soup_kitchen",
   },
 
   //Brooklyn Social Services
   {
     coordinate: {
-      latitude: 40.697177,
-      longitude: -73.971062,
+      latitude: 40.6952811,
+      longitude: -73.9765619,
     },
     pinColor: "magenta",
     title: "NYC Health + Hospitals/Gotham Health",
-    description:
-      "Immigration Advocacy and Legal Services - Cumberland – NYLAG (LegalHealth)",
+    description:"Immigration Advocacy and Legal Services - Cumberland – NYLAG (LegalHealth)",
     address: "100 N Portland Ave., 2nd Fl., Room 218, Brooklyn, NY 11205",
+    hours: "Mon-Thurs 8AM-7PM",
+    phone: "(844) 692-4692",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.655474,
-      longitude: -73.944507,
+      latitude: 40.6568067,
+      longitude: -73.9446078,
     },
     pinColor: "magenta",
-    title: "NYC Health + Hospitals/Kings County",
+    title: "Kings County - SNAP",
     description: "SNAP Enroller",
-    address:
-      "451 Clarkson Ave., R Bldg., Financial Services, Brooklyn, NY 11203",
+    address: "451 Clarkson Ave., R Bldg., Financial Services, Brooklyn, NY 11203",
+    hours: "Open 24 Hours",
+    phone: "(718) 245-3131",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.700632,
-      longitude: -73.941154,
+      latitude: 40.6995249,
+      longitude: -73.9427675,
     },
     pinColor: "magenta",
     title: "NYC Health + Hospitals/Woodhull",
     description: "General Legal Assistance - NYLAG (LegalHealth)",
     address: "760 Broadway, Geriatric Wellness Center, Brooklyn, NY 11206",
+    hours: "Open 24 hours",
+    phone: "(718) 963-8000",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.577981,
-      longitude: -73.965506,
+      latitude: 40.5860219,
+      longitude: -73.9657311,
     },
     pinColor: "magenta",
     title: "NYC Health + Hospitals/Coney Island",
     description: "General Legal Assistance - NYLAG (LegalHealth)",
     address: "2601 Ocean Pkwy, Room 101, Brooklyn, NY 11235",
+    hours: "Open 24 hours",
+    phone: "(718) 616-3000",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.678265,
-      longitude: -73.918853,
+      latitude: 40.6784806,
+      longitude: -73.9178198,
     },
     pinColor: "magenta",
     title: "The Campaign Against Hunger",
     description: "Food and Nutrition: SNAP Enrollment",
     address: "2010 Fulton St., Brooklyn, NY 11233",
+    hours: "Mon-Fri 9:30AM-5:30PM",
+    phone: "No data found",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.680259,
-      longitude: -73.944974,
+      latitude: 40.6800667,
+      longitude: -73.9458829,
     },
     pinColor: "magenta",
-    title: "Financial Assistance - Bedford Stuyvesant Restoration Corporation",
-    description: "Single Stop",
+    title: "Bedford Stuyvesant Restoration Corporation",
+    description: "Financial Assistance - Single Stop",
     address: "1368 Fulton St., Brooklyn, NY 11216",
+    hours: "Mon-Fri 9AM-7PM",
+    phone: "No data found",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.659348,
-      longitude: -73.884699,
+      latitude: 40.6589981,
+      longitude: -73.8825267,
     },
     pinColor: "magenta",
     title: "Good Shepherd Services",
     description: "Financial Assistance - Single Stop – East New York",
     address: "876 Schenk Ave., Brooklyn, NY 11207",
+    hours: "No data found",
+    phone: "No data found",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.598757,
-      longitude: -73.947412,
+      latitude: 40.5991888,
+      longitude: -73.9511252,
     },
     pinColor: "magenta",
     title: "Public Health Solutions Neighborhood WIC Center",
     description: "Financial Assistance - Sheepshead Bay – Single Stop",
     address: "2555 Ocean Ave., 2nd Fl., Brooklyn, NY 11229",
+    hours: "Wed/Thurs 9AM to 4:30PM",
+    phone: "(718) 332-4059",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.65207,
-      longitude: -74.006619,
+      latitude: 40.6520349,
+      longitude: -74.0048461,
     },
     pinColor: "magenta",
     title: "SCO Family of Services – Center for Family Life",
-    description:
-      "Financial Assistance - Community Service Program – Single Stop",
+    description:"Financial Assistance - Community Service Program – Single Stop",
     address: "443 39th St., Brooklyn, NY 11232",
+    hours: "Mon-Fri 9AM-5PM",
+    phone: "(718) 438-9500",
     type: "social_services",
   },
 
   {
     coordinate: {
-      latitude: 40.699161,
-      longitude: -73.91788,
+      latitude: 40.694717,
+      longitude: -73.9187059,
     },
     pinColor: "magenta",
     title: "NYC Health + Hospitals/Gotham Health – Bushwick",
     description: "Women, Infants, and Children (WIC) Enrollment",
     address: "335 Central Ave., 1st Fl., Brooklyn, NY 11221",
+    hours: "Tues-Fri 8:30AM-4:30PM",
+    phone: "(844) 692-4692",
     type: "social_services",
   },
 
   //Brooklyn Donation Centers
-  {
-    coordinate: {
-      latitude: 40.693416,
-      longitude: -73.988858,
-    },
-    pinColor: "orange",
-    title: "NeON- Clothing closet",
-    description:
-      "Offers free lightly worn shoes, clothing, and accessories for women, men and children.",
-    address: "345 Adams Street, Brooklyn, NY",
-    type: "donation_centers",
-  },
 
   {
     coordinate: {
@@ -802,8 +884,10 @@ export const markers = [
     },
     pinColor: "orange",
     title: "Goodwill NYNJ Store & Donation Center",
-    description: "Affordable Clothing -> Mon-Sat: 11am-7pm",
+    description: "Affordable Clothing",
     address: "258 Livingston St, Brooklyn, NY 11201",
+    hours: "Mon-Sat: 11am-7pm",
+    phone: "(718) 923-9037",
     type: "donation_centers",
   },
 
@@ -816,6 +900,8 @@ export const markers = [
     title: "St. Mary’s Church Clothing Drive",
     description: "Affordable Clothing",
     address: "230 Classon Ave, Brooklyn, NY 11205",
+    hours: "Mon-Tues/Thurs-Sat 9AM-1PM",
+    phone: "(718) 529-6070",
     type: "donation_centers",
   },
 
@@ -826,8 +912,10 @@ export const markers = [
     },
     pinColor: "orange",
     title: "The Salvation Army Family Store & Donation Center",
-    description: "Affordable Clothing -> Mon-Sat: 10am-7pm",
+    description: "Affordable Clothing Mon-Sat: 10am-7pm",
     address: "436 Atlantic Ave, Brooklyn, NY 11217",
+    hours: "Mon-Sat: 10am-7pm",
+    phone: "(917) 909-0867",
     type: "donation_centers",
   },
 
@@ -840,6 +928,8 @@ export const markers = [
     title: "Help USA - Brooklyn",
     description: "Supplies, Shelter, temporary housing and more",
     address: "515 Blake Ave, Brooklyn, NY 11207",
+    hours: "Open 24 Hours",
+    phone: "No data found",
     type: "donation_centers",
   },
 
@@ -850,9 +940,10 @@ export const markers = [
     },
     pinColor: "orange",
     title: "The Salvation Army",
-    description:
-      "Bills, food, education, pregnancy support, immigration services and more",
+    description: "Bills, food, education, pregnancy support, immigration services and more",
     address: "22 Quincy St. Brooklyn, NY",
+    hours: "No data found",
+    phone: "No data found",
     type: "donation_centers",
   },
 
@@ -865,9 +956,314 @@ export const markers = [
     title: "Housing Works, Inc.",
     description: "Donations of clothing, shoes, jewelry, accessories",
     address: "57 Willoughby St, Brooklyn, NY 11201",
+    hours: "Mon-Fri 8:30AM-6:30PM",
+    phone: "(347) 473-7400",
     type: "donation_centers",
   },
+  
+  // Start of Bk Emergency Services
+  {
+    coordinate: {
+      latitude: 40.646537,
+      longitude: -74.0205301,
+    },
+    pinColor: "red",
+    title: "Emergency Department at NYU Langone",
+    description: "Hospital—Brooklyn",
+    address: "150 55th St, Brooklyn, NY 11220",
+    hours: "Open 24 Hours",
+    phone: "(718) 630 7185",
+    type: "emergency_services",
+  },
 
+  {
+    coordinate: {
+      latitude: 40.6906344,
+      longitude: -73.977567,
+    },
+    pinColor: "red",
+    title: "The Brooklyn Hospital Center",
+    description: "Emergency Room",
+    address: "121 Dekalb Ave, Brooklyn, NY 11201",
+    hours: "Open 24 Hours",
+    phone: "(718) 250 8000",
+    type: "emergency_services",
+  },
+
+  {
+    coordinate: {
+      latitude: 40.6682002,
+      longitude: -73.9794969,
+    },
+    pinColor: "red",
+    title: "New York-Presbyterian Brooklyn Methodist",
+    description: "Hospital Emergency Department",
+    address: "506 6th St, Brooklyn, NY 11215",
+    hours: "Open 24 Hours",
+    phone: "(718) 780 3137",
+    type: "emergency_services",
+  },
+
+  {
+    coordinate: {
+      latitude: 40.6138831,
+      longitude: -73.9484864,
+    },
+    pinColor: "red",
+    title: "New York Community Hospital",
+    description: "Emergency Room",
+    address: "2525 Kings Hwy, Brooklyn, NY 11229",
+    hours: "Open 24 Hours",
+    phone: "(718) 692 5300",
+    type: "emergency_services",
+  },
+
+  {
+    coordinate: {
+      latitude: 40.6562603,
+      longitude: -73.942951,
+    },
+    pinColor: "red",
+    title: "NYC Health + Hospitals/Kings County",
+    description: "Emergency Room",
+    address: "489 Clarkson Ave, Brooklyn, NY 11203",
+    hours: "Open 24 Hours",
+    phone: "(718) 245 3131",
+    type: "emergency_services",
+  },
+  
+// Start of Queens data
+{
+  coordinate: {
+    latitude: 40.7188721,
+    longitude: -73.8233677,
+  },
+  pinColor: "green",
+  title: "Kehilat Sephardim Food Pantry",
+  description: "Food Pantry",
+  address: "15062 78th Rd, Queens, NY 11367",
+  hours: "Mon / Wed 10AM-2PM | Tue / Thu 11AM-1PM | Sun 10AM-4PM",
+  phone: "(718) 591-9574",
+  type:"food_pantry",
+},
+
+
+{
+  coordinate: {
+    latitude: 40.7641071,
+    longitude: -73.8286116,
+  },
+  pinColor: "green",
+  title: "Buddhist Tzu Chi Foundation, Northeast Regional Headquarter",
+  description: "Food Pantry",
+  address: "137-77 Northern Blvd, Flushing, NY 11354",
+  hours: "Mon-Sun: 10AM - 5PM",
+  phone: "(718) 460-4590",
+  type:"food_pantry",
+},
+
+
+{
+  coordinate: {
+    latitude: 40.752484,
+    longitude: -73.8803015,
+  },
+  pinColor: "green",
+  title: "The Salvation Army Queens Temple",
+  description: "Food Pantry",
+  address: "86-07 35th Ave, Jackson Heights, NY 11372",
+  hours: "Mon/Sun 24HRS | Tue/Wed Sat 9AM - 9PM | Thurs - Sat 9AM - 1PM",
+  phone: "(718) 335-3693",
+  type:"food_pantry",
+},
+
+
+
+{
+  coordinate: {
+    latitude: 40.731998 ,
+    longitude: -73.850718,
+  },
+  pinColor: "yellow",
+  title: "Masbia of Queens",
+  description: "Soup Kitchen",
+  address: "105 - 47 64th Rd, Queens, NY 11375",
+  hours: "Mon-Thurs: 3PM - 7PM / Sun: 3PM - 7PM ",
+  phone: "(718) 534-7321",
+  type:"soup_kitchen",
+},
+
+
+{
+  coordinate: {
+    latitude: 40.7068082,
+    longitude: -73.790859,
+  },
+  pinColor: "yellow",
+  title: "Bethesda Missionary Baptist Church",
+  description: "Soup Kitchen",
+  address: "179-09 Jamaica Ave Jamaica,NY 11432",
+  hours: "Thurs: 12PM - 1:30PM",
+  phone: "(718) 297-5908",
+  type:"soup_kitchen",
+},
+
+
+
+{
+  coordinate: {
+    latitude: 40.6964475 ,
+    longitude: -73.8048727,
+  },
+  pinColor: "yellow",
+  title: "Rush Temple AME Zion Church",
+  description: "Soup Kitchen",
+  address: "119-48 Sutphin Boulevard Jamaica, NY 11436",
+  hours: "Wed/Fri: 12PM - 1:30PM", 
+  phone: "(718) 529-571",
+  type:"soup_kitchen",
+},
+
+{
+  coordinate: {
+    latitude: 40.7702028, 
+    longitude: -73.8757694,
+  },
+  pinColor: "blue",
+  title: "The Landing Family Shelter",
+  description: "Homeless Shelter",
+  address: "94-00 Ditmars Blvd, Queens, NY 11369", 
+  hours: "Mon - Sun 24HRS",
+  phone: "(718) 226-0414",
+  type: "homeless_shelter",
+},
+
+
+
+{
+  coordinate: {
+    latitude: 40.7015513,
+    longitude: -73.8042052,
+  },
+  pinColor: "blue",
+  title: "Restfull Nights Organization",
+  description: "Homeless Shelter",
+  address: "106-38 150th St, Jamaica, NY 11435",
+  hours: "Mon - Fri 10M - 5PM | Sat 12PM - 4PM", 
+  phone: "(718) 954-5744",
+  type: "homeless_shelter",
+},
+
+
+
+
+{
+  coordinate: {
+    latitude:40.635182 ,
+    longitude: -73.7399152,
+  },
+  pinColor: "blue",
+  title: "Homes For the Homeless",
+  description: "Homeless Shelter",
+  address: "17515 Rockaway Blvd, Queens, NY 11434", 
+  hours: "Mon - Fri 24HRS",
+  phone: "(718) 244-0670",
+  type: "homeless_shelter",
+},
+
+
+{
+  coordinate: {
+    latitude: 40.74773,
+    longitude: -73.939525 ,
+  },
+  pinColor: "blue",
+  title: " ACE Programs for the Homeless",
+  description: "Homeless Shelter",
+  address: "30-30 Northern Blvd b100, Queens, NY 11101 ", 
+  hours: " Mon - Fri: 9AM - 5PM  ", 
+  phone: "(212) 274-0550", 
+  type: "homeless_shelter",
+},
+
+
+{
+  coordinate: {
+    latitude: 40.591842,
+    longitude: -73.7935089,
+  },
+  pinColor: "blue",
+  title: " Core Beach Residence Shelter",
+  description: "Homeless Shelter",
+  address: " 316 Beach 65th St, Queens, NY 11692", 
+  hours: " Mon - Sun: 24HRS   ", 
+  phone: "(718) 732-0509 ", 
+  type: "homeless_shelter",
+},
+
+
+
+{
+  coordinate: {
+    latitude: 40.5913917,
+    longitude: -73.7861912,
+  },
+  pinColor: "magenta",
+  title: "CAMBA",
+  description: "Social Services",
+  address: "57-11 Beach 56th Pl, Arverne, NY 11692", 
+  hours: "Mon - Fri: 9AM - 5PM", 
+  phone: "(718) 675-3347",
+  type: "social_services",
+},
+
+
+
+{
+  coordinate: {
+    latitude:40.6033991 ,
+    longitude: -73.7515568,
+  },
+  pinColor: "magenta",
+  title: "Catholic Charities Neighborhood Services Homebase Homeless Prevention",
+  description: "Social Services",
+  address: "18-47 Mott Ave, Far Rockaway, NY 11691", 
+  hours: "Mon-Fri: 9AM - 5PM", 
+  phone: "(718) 647-1015",
+  type : "social_services",
+},
+
+
+{
+  coordinate: {
+    latitude: 40.6613421,
+    longitude: -73.7683904,
+  },
+  pinColor: "magenta",
+  title: "Springfield Family Residence",
+  description: "Social Services",
+  address: "146-80 Guy R Brewer Blvd, Queens, NY 11434", 
+  hours: "Mon - Sun: 24HRS", 
+  phone: "(718) 521-5090",
+  type: "social_services",
+},
+
+{
+  coordinate: {
+    latitude: 40.713961 ,
+    longitude: -73.823757,
+  },
+  pinColor: "purple",
+  title: "Care For Homeless",
+  description: "Clothing Center ",
+  address: "8020 134th St, Jamaica, NY 11435 ", 
+  hours: " No data found ", 
+  phone: "(718) 520-0491 ",
+  type: "donation_centers",
+},
+
+
+// ----------------------END of QUEENS/START OF BRONX-----------------------
   {
     coordinate: {
       latitude: 40.8205,
