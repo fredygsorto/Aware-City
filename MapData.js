@@ -40,19 +40,6 @@ export const markers = [
   },
   {
     coordinate: {
-      latitude: 40.7582077,
-      longitude: -73.992156,
-    },
-    pinColor: "blue",
-    title: "American Homestay",
-    description: "Homeless Shelter",
-    address: "360 W 42nd St, New York, NY 10036",
-    hours: "Mon-Fri 11AM-4PM",
-    phone: "(212) 760-3015",
-    type: "homeless_shelter",
-  },
-  {
-    coordinate: {
       latitude: 40.7755258,
       longitude: -73.9566967,
     },
@@ -1729,19 +1716,6 @@ export const markers = [
   },
   {
     coordinate: {
-      latitude: 40.79616,
-      longitude: -73.93725,
-    },
-    pinColor: "blue",
-    title: "The Bowery Mission - East Harlem Campus",
-    description: "Homeless Shelter",
-    address: "315 E 115th St, New York, NY 10029",
-    hours: "",
-    phone: "(212) 226-6214",
-    type: "homeless_shelter",
-  },
-  {
-    coordinate: {
       latitude: 40.8269659,
       longitude: -73.9066809,
     },
@@ -2254,16 +2228,6 @@ export const markers = [
     address: "2737 3rd Ave, Bronx, NY 10451",
     hours: "Open 24 hours",
     phone: "(718) 585-3850",
-    type: "homeless_shelter",
-  },
-  {
-    coordinate: { latitude: 40.8158849, longitude: -73.9191875 },
-    pinColor: "blue",
-    title: "Nazareth Housing",
-    description: "Homeless Shelter",
-    address: "369 E 148th St, Bronx, NY 10455",
-    hours: "Open 24 hours",
-    phone: "(718) 993-7091",
     type: "homeless_shelter",
   },
   {
@@ -2926,7 +2890,7 @@ export const markers = [
     title: "American Homestay",
     description: "Homeless Shelter",
     address: "360 W 42nd St, New York, NY 10036",
-    hours: "Mon-Fri 11AM-4Pm",
+    hours: "Mon-Fri 11AM-4PM",
     phone: "(212) 760-3015",
     type: "homeless_shelter",
   },
