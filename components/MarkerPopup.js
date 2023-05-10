@@ -22,7 +22,7 @@ const MarkerPopup = ({
     <Modal visible={visible} animationType="fade">
       <View style={styles.container}>
         <TouchableOpacity onPress={onClose} style={styles.closeButton}>
-          <FontAwesome name="close" size={20} color="#FFFFFF" />
+          <FontAwesome name="close" size={30} color="#FFFFFF" />
         </TouchableOpacity>
         <View style={styles.card}>
           <Text style={styles.title}>{title}</Text>
@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
   },
   closeButton: {
     position: "absolute",
-    top: 10,
+    top: 20,
     left: 10,
-    padding: 5,
+    padding: 20,
   },
   row: {
     flexDirection: "row",
