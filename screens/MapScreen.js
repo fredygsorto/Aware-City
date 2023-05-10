@@ -19,6 +19,7 @@ import sortByDistance from "sort-by-distance";
 
 import { markers } from "../MapData";
 import Loading from "./Loading";
+import MarkerPopup from "../components/MarkerPopup";
 
 export default function MapScreen() {
   // User location
@@ -26,6 +27,9 @@ export default function MapScreen() {
 
   // Carousel linking with Marker Index
   const [selectedMarkerIndex, setSelectedMarkerIndex] = useState(null);
+
+  const [markerPopupVisible, setMarkerPopupVisible] = useState(false);
+  const [selectedMarker, setSelectedMarker] = useState(null);
 
   const mapRef = useRef(null);
 
@@ -125,6 +129,11 @@ export default function MapScreen() {
     }
   };
 
+  const handleMarkerPress = (marker) => {
+    setSelectedMarker(marker);
+    setMarkerPopupVisible(true);
+  };
+
   // Function to render items in the carousel card
   const renderItem = ({ item, index }) => {
     return (
@@ -136,7 +145,9 @@ export default function MapScreen() {
             animateToSelectedMarker(index);
           }}
         >
-          <Text style={styles.carouselTitle}>{item.title}</Text>
+          <Text style={styles.carouselTitle} numberOfLines={2}>
+            {item.title}
+          </Text>
           <Text style={styles.carouselSubTitle}>{item.description}</Text>
           <View style={styles.carouselDetails}>
             <View style={styles.carouselDetail}>
@@ -156,6 +167,7 @@ export default function MapScreen() {
                     `https://www.google.com/maps/search/?api=1&query=${item.address}`
                   )
                 }
+                numberOfLines={1}
               >
                 {item.address}
               </Text>
@@ -247,9 +259,21 @@ export default function MapScreen() {
               pinColor={marker.pinColor}
               title={marker.title}
               description={marker.description}
+              onPress={() => handleMarkerPress(marker)}
             />
           ))}
       </MapView>
+      {selectedMarker && (
+        <MarkerPopup
+          visible={markerPopupVisible}
+          onClose={() => setMarkerPopupVisible(false)}
+          title={selectedMarker.title}
+          description={selectedMarker.description}
+          address={selectedMarker.address}
+          hours={selectedMarker.hours}
+          phone={selectedMarker.phone}
+        />
+      )}
       {/* filters */}
       <View style={styles.filterBox}>
         <TouchableOpacity onPress={toggleFilterBox}>
