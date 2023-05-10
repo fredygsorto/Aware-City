@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Linking,
 } from "react-native";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const MarkerPopup = ({
   visible,
