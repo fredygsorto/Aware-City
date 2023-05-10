@@ -274,6 +274,7 @@ export default function MapScreen() {
           phone={selectedMarker.phone}
         />
       )}
+      
       {/* filters */}
       <View style={styles.filterBox}>
         <TouchableOpacity onPress={toggleFilterBox}>

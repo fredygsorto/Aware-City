@@ -1542,8 +1542,151 @@ export const markers = [
     phone: "(718) 341-1719",
     type: "soup_kitchen",
   },
+  //Emergency services in Manhattan 
+   
+{
+  coordinate: {
+    latitude: 40.7697915,
+    longitude: -73.9870125,
+  },
+  pinColor: "red",
+  title: "Mount Sinai West Emergency Room",
+  description: "Emergency Services",
+  address: "1000 10th Ave, New York, NY 10019",
+  hours: "Open 24 Hours",
+  phone: "(212) 523-6800",
+  type: "emergency_services",
+},
 
-  // ----------------------END of QUEENS/START OF BRONX-----------------------
+{
+  coordinate: {
+    latitude: 40.7643737,
+    longitude: -73.9541392,
+  },
+  pinColor: "red",
+  title: "NewYork-Presbyterian / Weill Cornell",
+  description: "Medical Center Emergency Departments",
+  address: "525 E 68th St, New York, NY 10065",
+  hours: "Open 24 Hours",
+  phone: "(212) 746-5026",
+  type: "emergency_services",
+},
+
+{
+  coordinate: {
+    latitude: 40.7376207,
+    longitude: -74.0005979,
+  },
+  pinColor: "red",
+  title: "Lenox Health Greenwich Village",
+  description: "Emergency Services",
+  address: "30 7th Ave, New York, NY 10011",
+  hours: "Open 24 Hours",
+  phone: "(646) 665-6000",
+  type: "emergency_services",
+},
+
+{
+  coordinate: {
+    latitude: 40.7603145,
+    longitude: -73.9963615,
+  },
+  pinColor: "red",
+  title: "+MEDRITE Midtown West",
+  description: "Urgent Care - Manhattan",
+  address: "521 W 42nd St, New York, NY 10013",
+  hours: "Mon-Fri 8AM-8PM | Sat-Sun 9AM-6PM",
+  phone: "(212) 695-4444",
+  type: "emergency_services",
+},  
+
+{
+  coordinate: {
+    latitude: 40.7427584,
+    longitude: -73.9736412,
+  },
+  pinColor: "red",
+  title: "Ronald O. Perelman Centert",
+  description: "Emergency Services",
+  address: "570 1st Ave., New York, NY 10016",
+  hours: "No data found",
+  phone: "(212) 263-5550",
+  type: "emergency_services",
+},
+
+// Donation centers in Manhattan
+
+{
+  coordinate: {
+    latitude: 40.7638844,
+    longitude: -73.9863813,
+  },
+  pinColor: "purple",
+  title: "Project Broadway",
+  description: "Donation Centers",
+  address: "322 W 52nd St, New York, NY 10101",
+  hours: "No data found",
+  phone: "(212) 262-2636",
+  type: "donation_centers",
+},
+
+{
+  coordinate: {
+    latitude: 40.7626674,
+    longitude: -73.9953677,
+  },
+  pinColor: "purple",
+  title: "The Salvation Army Family Storey",
+  description: "Donation Center",
+  address: "536 W 46th St, New York, NY 10036",
+  hours: "Mon-Sat 10AM to 7PM",
+  phone: "(800) 728-7825",
+  type: "donation_centers",
+},
+
+{
+  coordinate: {
+    latitude: 40.7608643,
+    longitude: -73.9606649,
+  },
+  pinColor: "purple",
+  title: "Goodwill NYNJ Store",
+  description: "Donation Center",
+  address: "1114 1st Ave., New York, NY 10065",
+  hours: "Mon-Sun 11AM to 7PM",
+  phone: "(212) 355-5206",
+  type: "donation_centers",
+},
+
+{
+  coordinate: {
+    latitude: 40.7553353,
+    longitude: -73.9975177,
+  },
+  pinColor: "purple",
+  title: "Q Thrifts Clothing",
+  description: "Donation Center",
+  address: "446 W 36th St., New York, NY 10018",
+  hours: "Tues-Fri 9AM to 6PM",
+  phone: "(212) 629-7440",
+  type: "donation_centers",
+},
+
+{
+  coordinate: {
+    latitude: 40.7444497,
+    longitude: -73.9919885,
+  },
+  pinColor: "purple",
+  title: "Goodwill NYNJ Store - W 25th",
+  description: "Donation Center",
+  address: "103 W 25th St, New York, NY 10001",
+  hours: "Mon-Sun 11AM to 7PM",
+  phone: "(646) 638-1725",
+  type: "donation_centers",
+},
+
+  // ----------------------START OF BRONX-----------------------
   {
     coordinate: {
       latitude: 40.8205,
