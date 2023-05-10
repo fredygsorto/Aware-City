@@ -22,39 +22,48 @@ const MarkerPopup = ({
     <Modal visible={visible} animationType="fade">
       <View style={styles.container}>
         <TouchableOpacity onPress={onClose} style={styles.closeButton}>
-          <Text style={styles.closeText}>Close</Text>
+          <FontAwesome name="close" size={20} color="#FFFFFF" />
         </TouchableOpacity>
         <View style={styles.card}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.description}>{description}</Text>
-          <Text
-            style={{
-              fontSize: 16,
-              lineHeight: 24,
-              color: "#007AFF",
-              textDecorationLine: "underline",
-            }}
-            onPress={() =>
-              Linking.openURL(
-                `https://www.google.com/maps/search/?api=1&query=${address}`
-              )
-            }
-            numberOfLines={1}
-          >
-            {address}
-          </Text>
-          <Text style={styles.info}>{hours}</Text>
-          <Text
-            style={{
-              fontSize: 16,
-              lineHeight: 24,
-              color: "#007AFF",
-              textDecorationLine: "underline",
-            }}
-            onPress={() => Linking.openURL(`tel:${item.phone}`)}
-          >
-            {phone}
-          </Text>
+          <View style={styles.row}>
+            <FontAwesome
+              name="map-marker"
+              size={16}
+              color="#007AFF"
+              style={styles.icon}
+            />
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL(
+                  `https://www.google.com/maps/search/?api=1&query=${address}`
+                )
+              }
+            >
+              <Text style={styles.linkText}>{address}</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.row}>
+            <FontAwesome
+              name="clock-o"
+              size={16}
+              color="#007AFF"
+              style={styles.icon}
+            />
+            <Text style={styles.info}>{hours}</Text>
+          </View>
+          <View style={styles.row}>
+            <FontAwesome
+              name="phone"
+              size={16}
+              color="#007AFF"
+              style={styles.icon}
+            />
+            <TouchableOpacity onPress={() => Linking.openURL(`tel:${phone}`)}>
+              <Text style={styles.linkText}>{phone}</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </Modal>
@@ -66,7 +75,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    backgroundColor: "rgba(0, 0, 0, 0.9)",
   },
   card: {
     backgroundColor: "#FCE9D8",
@@ -74,21 +83,26 @@ const styles = StyleSheet.create({
     padding: 20,
     width: "80%",
     alignItems: "center",
+    borderColor: "black",
+    borderWidth: 3,
   },
   title: {
     fontWeight: "bold",
-    fontSize: 18,
+    fontSize: 24,
     textAlign: "center",
     marginBottom: 10,
   },
   description: {
-    marginTop: 10,
+    fontSize: 16,
+    lineHeight: 24,
     textAlign: "center",
     marginBottom: 20,
   },
   info: {
-    marginTop: 5,
+    fontSize: 16,
+    lineHeight: 24,
     textAlign: "center",
+    marginTop: 5,
   },
   closeButton: {
     position: "absolute",
@@ -96,10 +110,19 @@ const styles = StyleSheet.create({
     left: 10,
     padding: 5,
   },
-  closeText: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "red",
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 5,
+  },
+  icon: {
+    marginRight: 5,
+  },
+  linkText: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: "#007AFF",
+    textDecorationLine: "underline",
   },
 });
 
